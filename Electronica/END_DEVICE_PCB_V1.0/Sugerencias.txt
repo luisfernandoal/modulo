@@ -1,0 +1,66 @@
+﻿SUGERENCIAS_PCB
+
+* PCB_SERIAL_INTERFACE------------------------------------------------------------------------
+Contexto: 
+ESD -->  It's a high-voltage event one-time discharge pulse about 50ns long.
+
+EMI -->  is the interference caused by one electrical or electronic device to another 
+         by the electromagnetic fields set up by its operation.
+
+Segun este datasheet ( Atmel/ Usb Hardware Design recommendations . )
+http://ww1.microchip.com/downloads/en/AppNotes/doc8388.pdf
+
+ESD-Considerations.  (electrostatic discharge)
+USB allows the application to have an open connection to the external
+environment, which could expose the entire system to ESD.
+
+EMI-Considerations   (electromagnetic interference).
+Tying the shield directly to ground would create a direct path from the ground plane to
+the shield, turning the USB cable into an antenna.
+
+Debido a que nuestros End-devices pueden verse afectados debido al posicionamiento
+de los mismos en campo, algunos fabricantes recomiendan las posibles soluciones: 
+
+To limit the USB cable antenna effect, it is recommended to connect the shield and ground 
+through an RC filter.  Typically, R = 1MΩ and C = 4.7nF ( Solucion mas comun). 
+
+Encontre en algunos foros soluciones propuestas por  diseñadores de dispositivos electronicos industriales.
+https://electronics.stackexchange.com/questions/269244/structure-of-a-usb-2-0-connector/269313#269313
+
+The industry solution is to use a de-coupling circuit between the shield and signal ground.
+Different manufacturers recommend slightly different solutions for this filter. 
+Googling for something like [EMI shielding and ESD protection of computer interfaces] will give a lot of recommendations, LC, RC, etc.
+
+My preference is to use a 0.1uF ceramic cap 0603 size, with a resistor of about 330 Ohms to provide galvanic path. 
+The filter works on specifics of this particular size of ceramic caps. 
+
+These caps have an impedance of capacitive type at frequencies up to 10-20MHz (so a 50ns pulse gets well-coupled with ground plane and dissipates in power supplies)
+, but at frequencies above 50MHz it becomes an inductor, so if provides a good de-coupling of cable shield from the noisy digital ground.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+CH340G 
+El fabricante recomienda un cristal con FOSC de 12MHz sin embargo el arduino nano tiene uno de 20MHZ y
+funciona correctamente. 
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------
+LUIS
+SOBRE EL EMI
+investigue del tema, toca mirar bien la frecuencia que vamos a usar, espero hacer pruebas para confirmar la interferencia y que tanto afecta los datos. Cabe resaltar que la idea de david de poner un filtro rc entre la antena y el dispositivo para filtrar la interferencia es buena idea usando los valores proporcionados.
+USO DE CONECTORES TERMINAL BOX, MOLEX O HEADERS.
+en conclusion con david por tamaño de la tarjeta no se peude usar terminal box. por otro lado luego de hacer pruebas iniciales en tarjetas artesanales, es bueno revisar que tipo de conector vamos a usar entre los propuestos para tener conexiones rapidas internas dentro del modulo ya que es preferible que tener cables soldados de tarjeta a tarjeta. 
+paginas donde podemos conseguir
+https://www.vistronica.com/conectores-cables-y-switches/terminal-de-bloque-enchufable-5-08mm-verde-6p-detail.html?gclid=Cj0KCQjw4f35BRDBARIsAPePBHyJI3tF7NyK7vqxmX1o2P7AoXoZo7rQtve_RQY6UnmHE_2gCd7LT_oaAgtLEALw_wcB
+---
+https://www.sigmaelectronica.net/categoria-producto/conectores/conectores-molex/
+https://www.vistronica.com/#q=molex&from_user=&page=0&refinements=%5B%5D&numerics_refinements=%7B%7D&index_name=%22prestashop1763_all_es%22
+-------------------------------------------
+falta diseño para tarjeta para modulo xbee.
+---------------------------------------------------------------------------------
