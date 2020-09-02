@@ -1,0 +1,7 @@
+https://arduinojson.org/v6/example/generator/
+
+https://randomnerdtutorials.com/esp32-http-get-post-arduino/#http-get-2
+
+https://restfulapi.net/json-data-types/
+
+https://www.techcoil.com/blog/how-to-post-json-data-to-a-http-server-endpoint-from-your-esp32-development-board-with-arduinojson/
