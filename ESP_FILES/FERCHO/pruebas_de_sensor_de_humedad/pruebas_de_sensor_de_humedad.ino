@@ -1,21 +1,23 @@
 #include <DHT.h>
-#include <DHT_U.h>
-
-DHT dht(SENSOR,DHT22)
+#include <ESP8266WiFi.h>
+#include <Arduino.h>
+#define DHTPIN 2
+DHT dht(DHTPIN,DHT22);
 
 
 
 void setup() {
- Serial.begin(9600);
+ Serial.begin(115200);
  dht.begin();
 }
 
 void loop() {
-  TEMPERATURA=dht.readTemperature();
-  HUMEDAD=dht.readHumidity();
-  Serial.print("temperatura:");
+ float TEMPERATURA=dht.readTemperature();
+  float HUMEDAD=dht.readHumidity();
+  Serial.println("temperatura:");
   Serial.println(TEMPERATURA);
    Serial.println("HUMEDAD:");
     Serial.println(HUMEDAD);
   delay(500);
+
 }
