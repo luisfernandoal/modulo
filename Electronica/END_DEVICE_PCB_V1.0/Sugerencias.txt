@@ -38,17 +38,6 @@ These caps have an impedance of capacitive type at frequencies up to 10-20MHz (s
 , but at frequencies above 50MHz it becomes an inductor, so if provides a good de-coupling of cable shield from the noisy digital ground.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-CH340G 
-El fabricante recomienda un cristal con FOSC de 12MHz sin embargo el arduino nano tiene uno de 20MHZ y
-funciona correctamente. 
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------------------
 LUIS
