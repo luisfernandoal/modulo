@@ -1,40 +1,26 @@
-   /**************************************************************************************
-
-This is example for ClosedCube HDC1080 Humidity and Temperature Sensor breakout booard
-
-Initial Date: 13-May-2016
-
-Hardware connections for Arduino Uno:
-VDD to 3.3V DC
-SCL to A5
-SDA to A4
-GND to common ground
-
-Written by AA for ClosedCube
-
-MIT License
-
-**************************************************************************************/
-
+  
+#include <avr/power.h>
 #include <Wire.h>
 #include "ClosedCube_HDC1080.h"
 
 ClosedCube_HDC1080 hdc1080;
-
 void setup()
 {
-	Serial.begin(115200);
-	
-	hdc1080.begin(0x40);
 
+  power_timer1_disable();// Timer 1
+  power_timer2_disable();// Timer 2
+  power_adc_disable(); // ADC converter
+  power_spi_disable(); // SPI  
+	hdc1080.begin(0x40);
+  Serial.begin(115200); 
 }
 
 void loop()
 {
-	Serial.print("T=");
-	Serial.print(hdc1080.readTemperature());
-	Serial.print("C, RH=");
-	Serial.print(hdc1080.readHumidity());
-	Serial.println("%");
-	delay(100);
+  Serial.print("T=");
+  Serial.print(hdc1080.readTemperature());
+  Serial.print("C, RH=");
+  Serial.print(hdc1080.readHumidity());
+  Serial.println("%");
+  delay(100);
 }
