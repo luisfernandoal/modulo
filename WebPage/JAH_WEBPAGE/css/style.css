@@ -1,0 +1,645 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'FuenteGeneral';
+	src: url('fuente/avante.ttf');
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'FuenteGeneral', sans-serif;
+	min-width:1040px;
+}
+header {
+height: 0px;
+padding-top: 15px;
+position: fixed;
+transition: all 0.5s;
+z-index: 99999;
+border-left: 127px solid transparent;
+border-right: 127px solid transparent;
+border-top: 152px solid #006a7f;
+}
+.wrapper {
+	width: 1040px;
+	margin: auto;
+}
+
+#logo {
+transition: all 0.5s;
+position: absolute;
+width: 130px;
+margin-left: 0px;
+height: 80px;
+background:#FFF;
+
+}
+
+header.smaller {
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 152px solid #006a7f;
+	width:100% !important;
+}
+header.smaller #frase{
+	right:5%;
+}
+
+#facebooktop {
+	float: right;
+}
+#twittertop {
+	float: right;
+	margin-right: 10px;
+}
+/* el menú en si mismo */
+.mi-menu {
+border-radius: 5px;
+list-style-type: none;
+margin: 0 auto;
+padding: 0;
+padding-top: 120px;
+height: 40px;
+width: 100%;
+background: transparent;
+transition: all 0.5s;
+position: absolute;
+margin-left: 389px;
+}
+/* si es necesario, evitamos que Blogger de problemas con los saltos de línea cuando escribimos el HTML */
+.mi-menu br {
+	display: none;
+}
+/* cada item del menu */
+.mi-menu li {
+	display: block;
+	float: left; /* la lista se ve horizontal */
+	height: 40px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	max-width: 260px;
+	width:20%;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	background-image: url(../images/menu.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: -270px 0px;
+	-moz-transform: skewX(-40deg);
+	-webkit-transform: skewX(-40deg);
+	-o-transform: skewX(-40deg);
+	-ms-transform: skewX(-40deg);
+}
+.mi-menu li a {
+	color: #EEE;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 28px;
+	padding: 0 14px;
+	margin: 6px 0;
+	text-decoration: none;
+	-moz-transform: skewX(40deg);
+	-webkit-transform: skewX(40deg);
+	-o-transform: skewX(40deg);
+	-ms-transform: skewX(40deg);
+	
+	
+}
+/* eliminamos los bordes del primer y el último */
+.mi-menu li:first-child a {
+	border-left: none;
+}
+.mi-menu li:last-child a {
+	border-right: none;
+}
+/* efecto hover cambia el color */
+.mi-menu li:hover {
+	background-position: -1px 0px;
+	color: #000;
+}
+/* los submenús */
+.mi-menu ul {
+
+border-radius: 0 0 5px 5px;
+left: 75px;
+width: 260px;
+margin: 0;
+padding: 0;
+opacity: 0;
+position: absolute;
+z-index: 99999;
+top: 40px;
+background: rgba(0,0,0,0.70);
+-moz-transition: opacity .25s ease .1s;
+-webkit-transition: opacity .25s ease .1s;
+-o-transition: opacity .25s ease .1s;
+-ms-transition: opacity .25s ease .1s;
+transition: opacity .25s ease .1s;
+-moz-transform: skewX(40deg);
+-webkit-transform: skewX(40deg);
+-o-transform: skewX(40deg);
+-ms-transform: skewX(40deg);
+
+}
+/* son visibes al poner el cursor encima */
+.mi-menu li:hover > ul {
+	opacity: 1;
+}
+/* cada un ode los items de los submenús */
+.mi-menu ul li {
+	height: 0; /* no son visibles */
+	overflow: hidden;
+	padding: 0;
+	width: 200px;
+	/* animamos su visibildiad */
+	-moz-transition: height .25s ease .1s;
+	-webkit-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;
+	transition: height .25s ease .1s;
+}
+.mi-menu li:hover > ul li {
+	height: 36px; /* los mostramos */
+	overflow: visible;
+	padding: 0;
+}
+.mi-menu ul li a {
+border: none;
+margin: 0;
+padding: 5px 0px 5px 0px;
+width: 260px;
+font-size: 12px;
+background:transparent;
+background-image:none;
+left: 1px;
+position: relative;
+transition:all 0.5s;
+}
+.mi-menu ul li a:hover {
+	background:#00a1a0;
+	background-image:none;
+}
+.activosub {
+	background:#00a1a0 !important;
+
+}
+.mi-menu ul li:hover {
+	background-image:none;
+}
+
+.activo {
+	background-position: -1px 0px !important;
+	color: #000 !important;
+}
+/* el último n otiene un borde */
+.mi-menu ul li:last-child a {
+	border: none;
+}
+#montanas {
+	background-image: url(../images/montanas.png);
+	background-size: 100% 100%;
+	height: 60px;
+	width: 100%;
+	background-repeat: no-repeat;
+	margin-top: 15px;
+	z-index: 9999;
+	position: absolute;
+}
+.banner {
+	position: absolute;
+	width: 100%;
+	left: 101%;
+}
+#banners {
+	overflow: hidden;
+}
+#slides {
+	position: relative;
+}
+.galerias{
+	position: relative;
+}
+#slides .slides-container {
+	display: none;
+}
+.galerias .slides-container {
+	display: none;
+}
+#slides .scrollable {
+ *zoom: 1;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+}
+.galerias .scrollable {
+ *zoom: 1;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+}
+#slides .scrollable:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.galerias .scrollable:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.slides-navigation {
+	margin: 0 auto;
+	position: absolute;
+	z-index: 3;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+}
+.slides-navigation a {
+	position: absolute;
+	display: block;
+}
+.slides-navigation a.prev {
+	left: 0;
+	height: 100%;
+	width: 12%;
+	background-image: url(../images/prev.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.slides-navigation a.next {
+	right: 0;
+	height: 100%;
+	width: 12%;
+	background-image: url(../images/next.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#next_a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	opacity: 0.5;
+	transition: all 0.5s;
+	max-width: 40%;
+}
+#prev_a {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	opacity: 0.5;
+	transition: all 0.5s;
+	max-width: 40%;
+}
+.slides-navigation a.next:hover > #next_a {
+	opacity: 1;
+}
+.slides-navigation a.prev:hover > #prev_a {
+	opacity: 1;
+}
+.slides-pagination {
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+.slides-pagination a {
+	border: 3px solid #FFF;
+	border-radius: 15px;
+	width: 10px;
+	height: 10px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+ *vertical-align: auto;
+	zoom: 1;
+ *display: inline;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+	margin: 2px;
+	overflow: hidden;
+	background: #FFF;
+	text-indent: -100%;
+}
+.slides-pagination a.current {
+	background: #006a7f;
+}
+#wide_container {
+	width: 100%;
+	height: 50px;
+}
+.images1 {
+background-image: url(../images/titulos.png);
+background-repeat: no-repeat;
+background-position: bottom right;
+border-bottom: 1px #b3b3b3 solid;
+margin: auto;
+padding: 10px 0;
+text-align: left;
+line-height: 10px;
+font-size: 30px;
+max-width: 100%;
+}
+#border {
+	background: url(../images/border_b.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 150px;
+	padding-top: 50px;
+}
+.text1 {
+	color: #FFF;
+	text-align: justify;
+}
+.footer_tit {
+	background-image: url(../images/footertit.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	line-height: 55px;
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+}
+#lista_footer {
+	list-style: url(../images/lista.png);
+	color: #000;
+	margin-top: 0px;
+	margin-left: 25px;
+}
+#lista_footer li {
+	padding-top: 5px;
+}
+#footer {
+	width: 162px;
+	height: 72px;
+	margin: auto;
+	
+}
+
+footer{
+margin-top:50px;}
+
+#info{
+	background: rgba(0,0,0,0.5);
+color: #fff;
+margin-top: -30px;
+z-index: 999;
+position: absolute;
+width: 100%;
+text-align: center;
+padding: 7px 0px;
+}
+#main {
+
+
+}
+
+.titulo{width: 296px; text-align:center; height:296px; background:url(../images/titulo.png); background-size:100% 100%; background-position:center; background-repeat:no-repeat; margin:auto;}
+.titulo .pt1{
+position: relative;
+top: 100px;
+font-size: 45px;
+font-family: sans-serif;
+text-indent: 6px;
+}
+.titulo .pt2{
+position: relative;
+top: 100px;
+font-size: 54px;
+font-family: sans-serif;
+text-indent: 6px;
+color:#fbb03b;
+}
+
+.titulo1{width: 296px; text-align:center; height:296px; background:url(../images/titulo.png); background-size:100% 100%; background-position:center; background-repeat:no-repeat; margin:auto;}
+.titulo1 .pt1{
+position: relative;
+top: 117px;
+font-size: 36px;
+font-family: sans-serif;
+text-indent: 6px;
+}
+.titulo1 .pt2{
+position: relative;
+top: 117px;
+font-size: 30px;
+font-family: sans-serif;
+text-indent: 6px;
+color:#fbb03b;
+}
+
+.separador{
+border-bottom:5px solid #39b54a;
+
+}
+.imagenes{
+	border:8px solid #39b54a;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:400px;
+	background-size:100% 100%;
+	height:340px;
+	float:left; 
+	margin-right:50px;
+}
+.textom{
+	font-size: 18px;	
+	line-height:23px;
+}
+.titulo2{
+background: url(../images/titulos.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
+width: 100%;
+text-align: center;
+height: 50px;
+color: #39b54a;
+line-height: 36px;
+font-size: 25px;
+font-weight: bold;
+}
+.subtitulo{
+	color: #39b54a;
+}
+
+.imagenes2{
+	border:8px solid #39b54a;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:313px;
+	background-size:100% 100%;
+	height:225px;
+	float:left; 
+	margin-right:50px;
+}
+textarea{
+	width: 360px;
+	height: 213px;
+	outline:none;
+}
+input[type="text"]{
+	width: 360px;
+	padding: 5px;
+	outline:none;
+}
+.antes{
+	float: left;
+	height: 32px;
+	width: 1px;
+}
+
+textarea{
+border:1px #00a1a0 solid;
+border-radius:5px;}
+
+
+input[type="text"]{
+
+border:1px #00a1a0 solid;
+border-radius:5px;}
+
+
+input[type="submit"]{
+width: 143px;
+height: 51px;
+border: 0px;
+background:#00a1a0;
+border-radius:30px;
+font-size: 21px;
+background-size: 100% 100%;
+color: #FFF;
+outline:none;
+transition: all 0.3s;
+}
+input[type="submit"]:hover{
+	background:#C5C5C5;
+}
+
+
+.textos{
+ padding-left:30px;
+}
+#frase{
+right: 0;
+margin-top: 20px;
+color: #fff;
+position: absolute;
+font-size: 30px;}
+.texto1{
+	text-align:justify;
+	font-size: 14px;
+}
+#rest1{
+height:222px;
+background-color:#006a7f;
+float:left;
+}
+#rest2{
+height:222px;
+background-color:#00a1a0;
+float:right;
+}
+.images2 {
+background-image: url(../images/titulos.png);
+background-repeat: no-repeat;
+background-position: bottom right;
+border-bottom: 1px #b3b3b3 solid;
+margin: auto;
+padding: 10px 0;
+text-align: left;
+line-height: 25px;
+font-size: 40px;
+max-width: 100%;
+font-weight: bold;
+}
+.color2{
+color: #00a1a0;
+}
+p{
+text-align:justify;
+}
+.imagenes_hover{
+float: left;
+margin-right: 50px;
+position:relative;
+overflow:hidden;
+}
+.imagenes_hover .texto_hover{
+position: absolute;
+width: 100%;
+height: 100%;
+line-height: 310px;
+color: #FFF;
+font-size: 70px;
+text-align: center;
+left: -460px;
+background: rgba(0, 0, 0, 0.5);
+transition:all 0.3s;
+}
+.imagenes_hover:hover .texto_hover{
+left:0px;
+}
+#facebook{
+position: absolute;    right: 190px;    top: 97px; transition:all 0.3s;}
+#facebook:hover{
+	opacity:0.5;
+}
+#twitter{
+    position: absolute;    right: 122px;    top: 100px; transition:all 0.3s;}
+#twitter:hover{
+	opacity:0.5;
+}
+.images3 {
+background-image: url(../images/titulos.png);
+background-repeat: no-repeat;
+background-position: bottom right;
+border-bottom: 1px #b3b3b3 solid;
+margin: auto;
+padding: 10px 0;
+text-align: left;
+line-height: 1px;
+font-size: 20px;
+max-width: 100%;
+font-weight: bold;
+}
+.imagenes2_hover{
+float: right;
+margin-left: 50px;
+position:relative;
+overflow:hidden;
+}
+.imagenes2_hover .texto_hover{
+position: absolute;
+width: 100%;
+height: 100%;
+line-height: 310px;
+color: #FFF;
+font-size: 70px;
+text-align: center;
+left: 460px;
+background: rgba(0, 0, 0, 0.5);
+transition:all 0.3s;
+}
+.imagenes2_hover:hover .texto_hover{
+left:0px;
+}
+
+#bgfin{
+background-image:url(../images/bg.jpg);
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-position:center;
+}
