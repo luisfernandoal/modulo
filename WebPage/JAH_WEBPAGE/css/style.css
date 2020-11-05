@@ -602,6 +602,11 @@ position: absolute;    right: 190px;    top: 97px; transition:all 0.3s;}
 #twitter:hover{
 	opacity:0.5;
 }
+#instagram{
+    position: absolute;    right: 50px;    top: 100px; transition:all 0.3s;}
+#instagram:hover{
+	opacity:0.5;
+}
 .images3 {
 background-image: url(../images/titulos.png);
 background-repeat: no-repeat;
