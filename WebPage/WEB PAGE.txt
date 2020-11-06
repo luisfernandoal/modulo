@@ -1,14 +1,6 @@
-
+HEX COLOR 1C6381
 // Cambiar header dependiendo de html.<. (inicio /= nosotros /= servicios )...etc.
-
----------------------------------------Banners-------------------------------------------------------------
-
-Banner 1
-
-Diseño electronico Pantallazo Software, / tarjeteria / Electronica SMD/THT .
-Creacion de sensores inteligentes . 
-Creacion de dispositivos inteligentes conectados con aplicaciones de gestion, para
-indutrias. 
+https://www.befunky.com/create/collage/
 
 Banner 2
 
