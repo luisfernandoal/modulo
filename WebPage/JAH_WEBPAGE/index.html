@@ -7,14 +7,34 @@
 <meta name="keywords" content="obras civiles, ormanentacion, canales y bajantes, cubiertas, estructuras, carpinteria en madera, carpinteria en alumni, drywall, puertas y ventanas, hidraulica y gas, eléctricos, pisos, pintura, remodelación, motobombas, policarbonato" />
 <link rel="shortcut icon" href="images/favicon.png">
 <link href="css/style.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />
 <link href="css/south-street/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <script src="js/jquery-1.8.3.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/jquery.animate-enhanced.min.js"></script>
 <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/classie.js"></script>
+
+
 <script>
+
+   // obtenemos width y height del documento en cualquier navegador.
+   function getdocumentwidth(documentWidth)
+     {     
+        var w = window.innerWidth
+         || document.documentElement.clientWidth
+         || document.body.clientWidth;      
+         return w; 
+     }
+   function getdocumentheight(documentHeight){
+         var h = window.innerHeight
+         || document.documentElement.clientHeight
+         || document.body.clientHeight;
+         return h; 
+        }
     function init() {
         window.addEventListener('scroll', function(e){
             var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -29,23 +49,25 @@
             }
         });
     }
+   // inicializamos funciones
     window.onload = init();
+    window.onload = getdocumentheight();
+    window.onload = getdocumentwidth();
 </script>
 </head>
 
 <body>
 <header>
 
-  <div style="margin-top: -175px;margin-left: -149px;">
-<svg style="margin-left: -30px;width: 531px;height: 160px;float: left;">
-<defs>
+ <div style="margin-top: -175px;margin-left: -149px;">
+  <svg style="margin-left: -30px;width: 531px;height: 160px;float: left;">
+   <defs>
     <clipPath id="clipPath3">
         <polygon points="348.411,160.01 133,159.818 0,0 481.709,0 "/>
     </clipPath>
-</defs>
-
-<image xlink:href="images/logo1.jpg"  width="481" height="160" clip-path="url(#clipPath3)" transform="translate(50, 5)"></image>
-    </svg>
+   </defs>
+    <image xlink:href="images/logo1.jpg"  width="481" height="160" clip-path="url(#clipPath3)" transform="translate(50, 5)"></image>
+  </svg>
 <div id="frase">Proyectos hechos realidad!</div>
 <!--DATOS DEL MENU-->
     <ul class="mi-menu">
@@ -53,9 +75,9 @@
       <li> <a href="nosotros.html"> Nosotros </a> </li>
       <li><a href="#"> Servicios de Ingeniería Civil</a> <!--NO SE SI PODEMOS CAMBIAR ESTE NOMBRE POR SERVICIOS DE INGENIERIA CIVIL-->
       <ul>
-          <li><a href="arq_ing.html">Arquitectura e Ingenieria </a></li>
+          <li><a href="arq_ing.html" >Arquitectura e Ingenieria </a></li>
           <li><a href="sys_construccion.html" >Dry Wall</a></li> 
-          <li><a href="mant_remodelacion.html"  >Mantenimiento de Cubiertas</a></li>
+          <li><a href="mant_remodelacion.html">Mantenimiento de Cubiertas</a></li>
           <li><a href="estructuras.html">Esctructuras y Cubiertas</a></li>  
           <li><a href="carpinteria.html">Carpinteria en Madera</a></li>
           <li><a href="hidraulica.html">Obras Hidraulicas</a></li>
@@ -84,15 +106,24 @@
     <div id="slides">
       <div class="slides-container"> 
     
-      <img src="images/banners/banner6.jpg" style="width:10%;" />
-
-      </div>
-    
+      <img src="images/banners/banner6.jpg" style="width:100%;" /><!--agregar banner6 a la carpeta final-->
+      <img src="images/banners/banner7.jpg" style="width:100%;" /><!--agregar banner7 a la carpeta final-->
+      </div>    
+      <nav class="slides-navigation">
+      <a class="next" href="#"><img id="next_a" src="images/next_.png" /></a> 
+      <a class="prev" href="#"><img id="prev_a" src="images/prev_.png" /></a></nav>
     </div>
   </div>
 <div style="background: url(images/separador.png);background-position: center;height: 60px;background-repeat: no-repeat;position: relative;top: -40px;z-index: -1;"></div>
-
-
+  <!--Container  redes sociales-->
+  <div class="media_container">      
+    <ul>
+        <li><a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+  </div>
   <div class="wrapper">
     <table style="border-spacing: 10px;">
       <tr>
@@ -117,29 +148,33 @@
  
   <footer>
     <div id="rest1"></div>
-     <div id="rest2"></div>
+    <div id="rest2"></div>
     <div class="wrapper" style="position:relative; background:url(images/foot.png); background-repeat:no-repeat; height:222px;">
      <table style="position: absolute;top: 65px;left: 30px;">
       
     <tr><td><img src="images/casa.png" /></td><td style="color:#FFF;">CALLE 63G No 28A-67 LOCAL 102 </td></tr>
     <tr><td><img src="images/telefono.png" /></td><td style="color:#FFF;"> PBX: 4358393- MOVIL: 3166286293-3015705870</td></tr>
     <tr><td><img src="images/mail.png" /></td><td style="color:#FFF;">aei_jah@hotmail.com</td></tr>
-     </table>
+    </table>
 
-
-     <a href="https://www.facebook.com/construccionesjah/"><img src="images/facebook.png" id="facebook"></a><!--Afalta crear la pagina de facebook-->
-     <a href="https://www.twitter.com/"><img src="images/twitter.png" id="twitter"></a><!--falta crear la pagina de twitter-->
-     <a href="#"><img src="images/twitter.png" id="instagram"></a>  <!--Añadi item para habilitar instagram falta crear la pagina de instagram-->
     </div>
-    <div id=""><div style="width: 100%;position: absolute;background: rgba(0, 0, 0, 0.55);margin-top: -40px;"><center><table><tbody><tr><td style="vertical-align: middle;color:#FFF !important;">© Todos los derechos reservados</td><td> <a href="http://mdccolombia.com/diseno-web.html" target="_blank"><img src="http://cambalachelibre.co/img/sello_mdc1.png" style="margin-left:30px;"></a></td></tr></tbody></table></center></div>
-</div>
+   
+    <div id=""><div style="width: 100%;position: absolute;background:
+     rgba(0, 0, 0, 0.55);margin-top: -40px;"><center>
+       <table><tbody><tr><td style="vertical-align: middle;color:#FFF !important;">© Todos los derechos reservados</td></tr></tbody></table></center></div>
+    </div>
   </footer>
 </div>
 <script>
 
 
 window.onresize = function(event) {
-	var width=$("#wide_container").width();
+   // posicionamos el container de nuestras redes sociales
+  // cambiando su propiedad css top y left el posicionamiento esta definido
+  // como fixed    
+    $(".media_container").css("top" , getdocumentheight()/2+70);
+    $(".media_container").css("left" , getdocumentwidth()-65);
+	  var width=$("#wide_container").width();
 		var porciento= (width*100)/1500;
 		var height=(650*porciento)/100;
 		$("#wide_container").height(height);
@@ -161,10 +196,10 @@ window.onresize = function(event) {
 };
 </script> 
 <script>
-	$(document).ready(function(e) {
-		
-
-
+	$(document).ready(function(e) { 
+   
+    $(".media_container").css("top" ,  getdocumentheight()/2+70);
+    $(".media_container").css("left" , getdocumentwidth()-65);
 		var width=$("#wide_container").width();
 		var width2=$(document).width();
 		var rest1=(width2-1040)/2;
@@ -178,7 +213,8 @@ window.onresize = function(event) {
 		$("header").width(header);
       	$('#slides').superslides({
         inherit_width_from: '#wide_container',
-        inherit_height_from: '#wide_container',play : 5000
+        inherit_height_from: '#wide_container',
+        play : 5000
       });
 	
     });

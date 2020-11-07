@@ -1,0 +1,68 @@
+/* le damos caracteristicas al contenedor
+   tamaño definido por el contenido de este
+   posicionamiento dado en por el script*/
+   .media_container
+   {
+	   
+	border-radius: 15px;
+	background-color:teal;
+	padding: 1px;
+	position: fixed;
+	z-index: 4;
+   }
+   /*desplegamos elementos de la lista en bloque 
+   los espaciamos 10px entre ellos  */
+   .media_container ul li
+   {
+	   display: block;  
+	   margin: 10px;
+	   position: relative; 
+	   left: -40px; 
+   }
+   /*despliegue elementos en bloque para que queden centrados
+	 creamos una sombra tenue 
+	 definimos la duracion de cambio de propiedad del elemento a*/
+   .media_container ul li a
+   {
+	   display: block;
+	   border-radius: 4px;
+	   color: white;
+	   font-size: 30px;
+	   box-shadow: 5px 2px 5px grey;
+	   transition: 0.3s;
+   }
+   /*aplicamos un filtro de desenfoque a cada elemento a
+   cuando se haga hover sobre un elemento ul */
+   .media_container ul:hover a
+   {
+	   filter: blur(1px);
+	   
+   }
+   /*definimos evento hover sobre a
+	movemos el elemento a en -x y lo hacemos crecer 1.1
+	hacemos mas fuerte la sombra 
+	nota: esta transition definida en 0.3s*/
+   .media_container ul li a:hover
+   {
+	   transform: translateX(-3px) scale(1.2);
+	   filter: none;
+	   box-shadow: 10px 6px 5px grey;
+   }
+   /*aplicamos color a cada elemento -a-
+   seleccionado por clase dada en el codigo HTML */
+   .media_container ul li .facebook:hover
+   {
+	   background: #3b5999;
+   }
+   .media_container ul li .instagram:hover
+   {
+	   background: #e4405f;
+   }
+   .media_container ul li .twitter:hover
+   {
+	   background: #55acee;
+   }
+   .media_container ul li .linkedin:hover
+   {
+	   background: #0077b5;
+   }
