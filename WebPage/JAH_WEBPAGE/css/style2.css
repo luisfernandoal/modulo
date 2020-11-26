@@ -4,11 +4,12 @@
    .media_container
    {
 	   
-	border-radius: 15px;
+   border-radius: 15px;
+   border: solid 1px white ; 
 	background-color:teal;
 	padding: 1px;
 	position: fixed;
-	z-index: 4;
+	z-index: 99999;
    }
    /*desplegamos elementos de la lista en bloque 
    los espaciamos 10px entre ellos  */
@@ -22,7 +23,7 @@
    /*despliegue elementos en bloque para que queden centrados
 	 creamos una sombra tenue 
 	 definimos la duracion de cambio de propiedad del elemento a*/
-   .media_container ul li a
+   .media_container > ul> li> a
    {
 	   display: block;
 	   border-radius: 4px;
@@ -33,7 +34,7 @@
    }
    /*aplicamos un filtro de desenfoque a cada elemento a
    cuando se haga hover sobre un elemento ul */
-   .media_container ul:hover a
+   .media_container >ul:hover >a
    {
 	   filter: blur(1px);
 	   
@@ -42,7 +43,7 @@
 	movemos el elemento a en -x y lo hacemos crecer 1.1
 	hacemos mas fuerte la sombra 
 	nota: esta transition definida en 0.3s*/
-   .media_container ul li a:hover
+   .media_container >ul >li >a:hover
    {
 	   transform: translateX(-3px) scale(1.2);
 	   filter: none;
@@ -66,3 +67,120 @@
    {
 	   background: #0077b5;
    }
+
+   /* CARDS CSS CODE */
+   .card_container
+   {
+      background: teal;
+      text-align: center;
+      padding: 20px 40px; 
+      margin-bottom: 30px;
+      height: 650px;
+      font-family:Arial, Helvetica, sans-serif; 
+   }
+ /* The animation code for span IOT */
+      @keyframes IOT {
+         from {color: white ; }
+         to {color:    
+            rgb(44, 220, 226) ; }
+      }
+      
+/* The animation code for CARD IOT */
+      @keyframes IOT-card {
+         from {border: solid 2px white;  }
+         to  { border: solid 2px black;}
+      }
+      .card_container>h1>span {
+
+      animation-name:IOT;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;  
+      animation-timing-function: ease-in-out;  
+      }
+   /* --------------------------------- */
+   .table_cards{
+      margin: 10px auto 15px; 
+      max-width: 1300px;
+      display: table; 
+      box-sizing: border-box; 
+      padding-left:0; 
+      padding-right:10px;
+      height:600px;
+      
+   }
+  .column
+  {
+   width:25%;
+   display:table-cell;
+
+  }
+
+ /* The animation code for cards IOT */
+   .table_cards:hover > .column> .card {
+
+      filter: grayscale(90%);
+      transform: translateX(-3px) scale(0.9); 
+
+   }
+ 
+   .table_cards > .column> .card:hover {
+   
+   filter: none;
+   transform: translateX(3px) scale(1.0); 
+   animation-name:IOT-card;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   animation-direction: alternate;  
+   animation-timing-function: linear; 
+   border: solid 2px black; 
+   }
+
+/* --------------------------------------- */
+  .card
+  {    
+   transition: 0.5s;
+   background-color: teal;
+   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+   border: solid 2px white; 
+   margin: 15px 2px;
+   padding-bottom: 2px;
+   height: 70%;
+   max-height:450px;
+ 
+}
+  .column .card h1
+  {
+   
+   color: black; 
+   background-color: white;
+   font-size: 95%;
+   font-family: 'Lato'; 
+   border: solid white 1px; 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+   margin:5px; 
+   padding: 5px;
+  }
+
+.column .card p
+{
+   background-color: teal; 
+   padding:10px 30px;
+   margin: 0;
+   height:  20%; 
+   font-size: medium;
+}
+
+ .column .card ul{
+     text-align: left;
+     background-color: #1C6381 ;
+     padding:10px 25px;
+     height: 21%; 
+     box-sizing: border-box;
+  } 
+  .column .card ul li a{
+      text-decoration: none;
+      color:white;  
+      font-size: 90%;
+    }
+    .column .card ul li{ color: teal;}

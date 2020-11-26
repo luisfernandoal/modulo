@@ -11,6 +11,12 @@
 <link href="css/south-street/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+
 <script src="js/jquery-1.8.3.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
@@ -69,45 +75,77 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
     <image xlink:href="images/logo1.jpg"  width="481" height="160" clip-path="url(#clipPath3)" transform="translate(50, 5)"></image>
   </svg>
 <div id="frase">Proyectos hechos realidad!</div>
-<!--DATOS DEL MENU-->
-    <ul class="mi-menu">
-      <li class="activo"><a href="index.html"> Inicio </a></li>
-      <li> <a href="nosotros.html"> Nosotros </a> </li>
-      <li><a href="#"> Servicios de Ingeniería Civil</a> <!--NO SE SI PODEMOS CAMBIAR ESTE NOMBRE POR SERVICIOS DE INGENIERIA CIVIL-->
-      <ul>
-          <li><a href="arq_ing.html" >Arquitectura e Ingenieria </a></li>
-          <li><a href="sys_construccion.html" >Dry Wall</a></li> 
-          <li><a href="mant_remodelacion.html">Mantenimiento de Cubiertas</a></li>
-          <li><a href="estructuras.html">Esctructuras y Cubiertas</a></li>  
-          <li><a href="carpinteria.html">Carpinteria en Madera</a></li>
-          <li><a href="hidraulica.html">Obras Hidraulicas</a></li>
-         
-      </ul>
-      </li>
-      <li><a href="#"> Servicios de Desarrollo </a> <!--Item de servicio de nosotros que añadi-->
-        <ul>
-            <li><a href="#">IOT</a></li> 
-            <li><a href="#">Prototipado</a></li>
-            <li><a href="#">Domótica e Inmótica</a></li>      
-            <li><a href="#" >Desarrollo de Hardware</a></li> 
-            <li><a href="#"  >Desarrollo de Software</a></li>
-            <li><a href="#">Diseño(modelado 3d)</a></li>   
-                  
-          </ul>
-        </li>
-      <li><a href="contactenos.html"> Contactenos </a> </li>
-    </ul>
+<div id="subfrase">Always put your hop in GOD 
+ <span style="font-size: 10px;
+ font-family:'Gloria Hallelujah' "> HOSEA 12:6</span></div>
+    <!--DATOS DEL MENU-->
+              
+                  <ul class="mi-menu">
+                    <li class="activo"><a href="index.html"><i class="fa fa-home fa-2x"></i> INICIO </a></li>
+                    <li> <a href="nosotros.html"><i class="fa fa-users fa-2x" ></i> NOSOTROS </a> </li>
+                    <li><a href="#"><i class="fa fa-industry fa-2x" ></i> SERVICIOS</a>                    
+                        <div class="submenu1">           
+                          <ul>
+                                  <li id="titulo1"><a href="arq_ing.html" >Arquitectura e Ingenieria</a></li>
+                                  <li><a href="mant_remodelacion.html">Mantenimiento de Cubiertas</a></li>
+                                  <li><a href="carpinteria.html">Carpinteria en Madera</a></li>
+                                  <li><a href="hidraulica.html">Obras Hidraulicas</a></li>
+                                  <li><a href="estructuras.html">Esctructuras </a></li>  
+                                  <li><a href="sys_construccion.html" >Dry Wall</a></li>
+                                  <li><a href="#">Ver mas <i class="fa fa-chevron-circle-down"></i></a></li> 
+                            
+                          </ul>
+                          <ul>
+                                <li id="titulo2"><a href="#" >Servicios IOT </a></li>
+                                <li><a href="#">Conectividad </a></li>
+                                <li><a href="#">Analitica de Datos </a></li>  
+                                <li><a href="#">Automatizacion Industrial</a></li>
+                                <li><a href="#" >Domotica</a></li> 
+                                <li><a href="#">Industrias</a></li>
+                                <li><a href="#" >Ver mas <i class="fa fa-chevron-circle-down"></i></a></li> 
+                              
+                          </ul>
+                          <ul>
+                              <li id="titulo3"><a href="#" >Hardware  </a></li>
+                              <li><a href="#" >Redes Inteligentes</a></li> 
+                              <li><a href="#">Sensores Inteligentes </a></li>  
+                              <li><a href="#">Desarrollo de Dispositivos </a></li>
+                              <li><a href="#">Reconocimiento biometrico</a></li>
+                              <li><a href="#">Mantenimiento Predictivo</a></li>
+                              <li><a href="#">Ver mas <i class="fa fa-chevron-circle-down"></i></a></li> 
+                            
+                          </ul>
+                          <ul>
+                            <li id="titulo4"><a href="#" >Software </a></li>
+                            <li><a href="#" >Plataforma de monitoreo</a></li> 
+                            <li><a href="#">Inteligencia Artificial</a></li>  
+                            <li><a href="#">Diseño 3D Personalizado </a></li>
+                            <li><a href="#">Gestion de usuarios</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                            <li><a href="#" >Ver mas <i class="fa fa-chevron-circle-down"></i></a></li> 
+                          
+                        </ul>
+                        </div>  
+                   
+                    </li>
+                    <li><a href="#"><i class="fa fa-newspaper fa-2x"></i></i> CASOS DE EXITO</a> </li>
+                    <li><a href="contactenos.html"><i class="fa fa-phone fa-2x"></i></i> CONTACTENOS</a> </li>
+                   
+                  </ul>
+               
     <!--FINAL DATOS DEL MENU-->
   </div>
 </header>
-<!--banner-->
+
 <div id="main">
+  <!--banner-->
   <div id="wide_container">
     <div id="slides">
       <div class="slides-container"> 
     
       <img src="images/banners/banner6.jpg" style="width:100%;" /><!--agregar banner6 a la carpeta final-->
       <img src="images/banners/banner7.jpg" style="width:100%;" /><!--agregar banner7 a la carpeta final-->
+      <img src="images/banners/banner8.jpg" style="width:100%;" /><!--agregar banner8 a la carpeta final-->
       </div>    
       <nav class="slides-navigation">
       <a class="next" href="#"><img id="next_a" src="images/next_.png" /></a> 
@@ -115,7 +153,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
     </div>
   </div>
 <div style="background: url(images/separador.png);background-position: center;height: 60px;background-repeat: no-repeat;position: relative;top: -40px;z-index: -1;"></div>
-  <!--Container  redes sociales-->
+<!--Container  redes sociales-->
   <div class="media_container">      
     <ul>
         <li><a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a></li>
@@ -124,6 +162,85 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
         <li><a href="https://www.linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
     </ul>
   </div>
+<!-- CARDS IOT  -->
+<div class="card_container">
+<h1 style="color:white; ">  Nuestras soluciones<span style="letter-spacing: 3px; "> IoT <i class="fas fa-sim-card"></i></span>  </h1>
+
+<p style="text-align: center; color: white; 
+ margin: auto; font-size:medium ;max-width: 1200px;"> 
+  Estamos convencidos de que los datos son <mark style="background-color: teal; color:rgb(44, 220, 226)"><b>el activo mas valioso de su empresa</b></mark> , por ello desarrollamos dispositivos de alta tecnologia
+  <mark style="background-color: teal; color:rgb(44, 220, 226)"><b>adaptados a sus requerimientos</b></mark> recopilamos datos relevantes y los transformamos en informacion valuable para su compañia.
+</p>
+
+<div class="table_cards">
+  <div class="column">
+    <div class="card">
+      <h1>USUARIOS CONECTADOS</h1>
+      <img src="images/UserCard.png" style="width:100% ">
+      <p>
+      Mejoraramos la seguridad industrial de su personal, 
+      mediante <b>sensores inteligentes </b> supervisamos
+      la salud humana y las condiciones medioambientales.
+      </p>
+      <ul >
+                    <li><a href="#">Monitoreo en tiempo real </a></li>
+                    <li><a href="#">Asistencia remota</a></li>  
+                    <li><a href="#">Seguridad general en todas las industrias</a></li>
+      </ul>
+ 
+    </div>
+  </div> 
+  <div class="column">
+    <div class="card">
+      <h1>INFRAESTRUCTURA CONECTADA</h1>
+      <img src="images/InfraestructureCard.png" style="width:100% ">
+      <p >Empleamos plataformas de <b>Gestión centralizada</b>, de acceso fácil y rápido a
+          información relevante sobre el <b>estado de su proceso.</b>
+      </p>
+      <ul >
+        <li><a href="#">Infraestructura virtualizada y escalable</a></li>
+        <li><a href="#">Conecte dispositivos nuevos y existentes</a></li>
+        <li><a href="#">Obtenga informacion significativa</a></li>
+      </ul>
+ 
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h1>PRODUCTOS CONECTADOS</h1>
+      <img src="images/ProductCard.png" style="width:100% ">
+      <p >Realizamos el <b>seguimiento de parametros</b> de desempeño de sus procesos, 
+          para maximisar la <b>flexibilidad, agilidad y calidad </b>de sus productos.
+        </p>
+      <ul >
+                    <li><a href="#">Supervision remota </a></li>
+                    <li><a href="#">Control de calidad eficiente</a></li>
+                    <li><a href="#">Analisis continuo de operacion</a></li>
+                   
+      </ul>
+ 
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h1>OPERACIONES CONECTADAS</h1>
+      <img src="images/OperationCard.png" style="width:100% ">
+      <p>Optimizamos el desempeño y uso de los recursos mediante el<b> control y monitoreo en tiempo real</b>  
+        de las operaciones de su empresa  </p>
+      <ul >
+        <li><a href="#"> Implementaciones mas rapidas y efectivas</a></li>
+        <li><a href="#">Seguimiento y rastreo de activos </a></li>
+        <li><a href="#"> Tome las mejores decisiones</a></li>
+                
+      </ul>
+ 
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+
+
   <div class="wrapper">
     <table style="border-spacing: 10px;">
       <tr>
@@ -178,7 +295,7 @@ window.onresize = function(event) {
 		var porciento= (width*100)/1500;
 		var height=(650*porciento)/100;
 		$("#wide_container").height(height);
-		
+    		
 		var width2=$(document).width();
 		var rest1=(width2-1040)/2;
 		$("#rest1").width(rest1);
@@ -190,13 +307,15 @@ window.onresize = function(event) {
 		else
 		{
 			var header=width-284;
-			$("header").width(header);	
+			$("header").width(header);	  
+     
 		}
-		
+ 
 };
 </script> 
 <script>
 	$(document).ready(function(e) { 
+
    
     $(".media_container").css("top" ,  getdocumentheight()/2+70);
     $(".media_container").css("left" , getdocumentwidth()-65);
@@ -214,9 +333,8 @@ window.onresize = function(event) {
       	$('#slides').superslides({
         inherit_width_from: '#wide_container',
         inherit_height_from: '#wide_container',
-        play : 5000
+        play : 4000
       });
-	
     });
   </script>
 </body>

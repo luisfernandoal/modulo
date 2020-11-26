@@ -2,38 +2,8 @@ HEX COLOR 1C6381
 // Cambiar header dependiendo de html.<. (inicio /= nosotros /= servicios )...etc.
 https://www.befunky.com/create/collage/
 
-Banner 2
-
-Modelado 3D /  CAD  / Solidworks / renderizados / analisis esfuerzos deformacion
-Impresion 3d (prototipado). 
-
-Banner3 
-Software <-- aplicaciones a la medida conectas con dispositivos inteligentes / Apex 
-
-Banner 4  interconectividad<------   entre dispositivos inteligentes , reportes en tiempo
-real. 
-
-
----------------------------------------Menu ---------------------------------------
-Nosotros, colocar mas informacion respecto a la empresa.( Nueva linea tecnologia).
-
-Servicios---- Actualizar  con images y proyectos actuales. 
-
-Crear Menu desplegable Linea tecnologica, con submenus. 
-
-Crear Item en el menu que redirija directamente a la aplicacion de gestion de APEX.
-
-Contactenos , agregar informacion de contacto (redes sociales / numeros de telefono)
-Verificar  el envio de formulario a el correo de la empresa. 
-Crear mensajeria whats'app para que el cliente pueda comunicarse directamente con
-la empresa.
-----  direccion google maps   
-
-------------------------------------------------------------------------------------------------------------------------
- -------------------------------------- Footer-----------------------------------------------------------------------
-Actualizar datos de contacto, agregar instagram, actualizar link facebook /twitteer. 
-
-Imagen con descripcion resumen de servicio de la empresa.
+https://www.prodwaregroup.com/es-es/soluciones/soluciones-iot/
+https://iotics.com.co/soluciones
 
 
 
