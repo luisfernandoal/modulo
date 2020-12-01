@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>JAH  Arquitectura e Ingenieria</title>
+<title>JAH  Arquitectos e Ingenieros</title>
 <meta name="description" content="Empresa pionera con amplia experiencia en mantenimiento de infraestructura en edificaciones, residenciales comerciales y industriales, en lineas de fabricacion de elementos metalicos, puertas, ventanas estructuras metalicas ,cubiertas, recambio cubiertas, instalacion lineas de vida, trabajo en alturas, fabricacion de canales y bajantes accesorios, suministro e instalaciones  hidrosanitarias, hidraulica y gas, fabricacionde muebles en madera, closeth,puertas, biliotecas, cocinas integrales, fabricacion de carpinetria en aluminio ventanas, puertas, fachadas flotantes, suministro e instalacion drywall,cielo raso, muros, instalaciones electricas, instalacion pisos, remodelaciones y pintura general, mantenimnieto y adecuaciion motobombas y tanque de almacenamiento  de agua potable dentro y fuera de la ciudad." />
 <meta name="keywords" content="obras civiles, ormanentacion, canales y bajantes, cubiertas, estructuras, carpinteria en madera, carpinteria en alumni, drywall, puertas y ventanas, hidraulica y gas, eléctricos, pisos, pintura, remodelación, motobombas, policarbonato" />
 <link rel="shortcut icon" href="images/favicon.png">
@@ -11,12 +11,11 @@
 <link href="css/south-street/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!-- header font  -->
 <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-
+<!-- end header font -->
 <script src="js/jquery-1.8.3.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
@@ -24,8 +23,8 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/classie.js"></script>
 
-
 <script>
+  
 
    // obtenemos width y height del documento en cualquier navegador.
    function getdocumentwidth(documentWidth)
@@ -48,11 +47,17 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
                 header = document.querySelector("header");
             if (distanceY > shrinkOn) {
                 classie.add(header,"smaller");
+                $("#media").addClass("goright");
             } else {
+
+                $("#media").removeClass("goright");
+
                 if (classie.has(header,"smaller")) {
                     classie.remove(header,"smaller");
                 }
             }
+
+            
         });
     }
    // inicializamos funciones
@@ -64,7 +69,6 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 
 <body>
 <header>
-
  <div style="margin-top: -175px;margin-left: -149px;">
   <svg style="margin-left: -30px;width: 531px;height: 160px;float: left;">
    <defs>
@@ -82,11 +86,11 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
               
                   <ul class="mi-menu">
                     <li class="activo"><a href="index.html"><i class="fa fa-home fa-2x"></i> INICIO </a></li>
-                    <li> <a href="nosotros.html"><i class="fa fa-users fa-2x" ></i> NOSOTROS </a> </li>
+                    <li> <a href="#"><i class="fa fa-users fa-2x" ></i> NOSOTROS </a> </li>
                     <li><a href="#"><i class="fa fa-industry fa-2x" ></i> SERVICIOS</a>                    
                         <div class="submenu1">           
                           <ul>
-                                  <li id="titulo1"><a href="arq_ing.html" >Arquitectura e Ingenieria</a></li>
+                                  <li ><a href="arq_ing.html" >Arquitectura e Ingenieria</a></li>
                                   <li><a href="mant_remodelacion.html">Mantenimiento de Cubiertas</a></li>
                                   <li><a href="carpinteria.html">Carpinteria en Madera</a></li>
                                   <li><a href="hidraulica.html">Obras Hidraulicas</a></li>
@@ -96,7 +100,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
                             
                           </ul>
                           <ul>
-                                <li id="titulo2"><a href="#" >Servicios IOT </a></li>
+                                <li ><a href="#" class="ancla">Servicios IOT </a></li>
                                 <li><a href="#">Conectividad </a></li>
                                 <li><a href="#">Analitica de Datos </a></li>  
                                 <li><a href="#">Automatizacion Industrial</a></li>
@@ -106,7 +110,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
                               
                           </ul>
                           <ul>
-                              <li id="titulo3"><a href="#" >Hardware  </a></li>
+                              <li ><a href="#" >Hardware  </a></li>
                               <li><a href="#" >Redes Inteligentes</a></li> 
                               <li><a href="#">Sensores Inteligentes </a></li>  
                               <li><a href="#">Desarrollo de Dispositivos </a></li>
@@ -116,7 +120,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
                             
                           </ul>
                           <ul>
-                            <li id="titulo4"><a href="#" >Software </a></li>
+                            <li ><a href="#" >Software </a></li>
                             <li><a href="#" >Plataforma de monitoreo</a></li> 
                             <li><a href="#">Inteligencia Artificial</a></li>  
                             <li><a href="#">Diseño 3D Personalizado </a></li>
@@ -146,6 +150,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
       <img src="images/banners/banner6.jpg" style="width:100%;" /><!--agregar banner6 a la carpeta final-->
       <img src="images/banners/banner7.jpg" style="width:100%;" /><!--agregar banner7 a la carpeta final-->
       <img src="images/banners/banner8.jpg" style="width:100%;" /><!--agregar banner8 a la carpeta final-->
+ 
       </div>    
       <nav class="slides-navigation">
       <a class="next" href="#"><img id="next_a" src="images/next_.png" /></a> 
@@ -154,92 +159,99 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
   </div>
 <div style="background: url(images/separador.png);background-position: center;height: 60px;background-repeat: no-repeat;position: relative;top: -40px;z-index: -1;"></div>
 <!--Container  redes sociales-->
-  <div class="media_container">      
+  <div class="media_container" id="media">      
     <ul>
-        <li><a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://www.linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+        <li><a target ="_blanck" href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a target ="_blanck" href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a target ="_blanck" href="https://ww
+          w.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a target ="_blanck" href="https://www.linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+        <li><a  target="_blanck" href=" https://wa.me/573005552923?text=Hola!%20me%20gustaria%20obtener%20mas%20informacion."      
+                class="was">  <i class="fab fa-whatsapp"></i> </a></li>
+
     </ul>
   </div>
 <!-- CARDS IOT  -->
-<div class="card_container">
-<h1 style="color:white; ">  Nuestras soluciones<span style="letter-spacing: 3px; "> IoT <i class="fas fa-sim-card"></i></span>  </h1>
+<div class="card_container" id="card_containerid">
+<h1 style="color:black; ">  Nuestras soluciones<span style="letter-spacing: 3px; "> IoT <i class="fas fa-sim-card"></i></span>  </h1>
 
 <p style="text-align: center; color: white; 
  margin: auto; font-size:medium ;max-width: 1200px;"> 
-  Estamos convencidos de que los datos son <mark style="background-color: teal; color:rgb(44, 220, 226)"><b>el activo mas valioso de su empresa</b></mark> , por ello desarrollamos dispositivos de alta tecnologia
-  <mark style="background-color: teal; color:rgb(44, 220, 226)"><b>adaptados a sus requerimientos</b></mark> recopilamos datos relevantes y los transformamos en informacion valuable para su compañia.
+      Los datos son el activo mas valioso de su empresa , por ello desarrollamos dispositivos de alta tecnologia
+     adaptados a sus requerimientos  recopilamos datos relevantes y los transformamos en informacion valuable para su compañia.
 </p>
 
-<div class="table_cards">
+<div class="table_cards" >
   <div class="column">
     <div class="card">
-      <h1>USUARIOS CONECTADOS</h1>
-      <img src="images/UserCard.png" style="width:100% ">
-      <p>
-      Mejoraramos la seguridad industrial de su personal, 
-      mediante <b>sensores inteligentes </b> supervisamos
-      la salud humana y las condiciones medioambientales.
-      </p>
-      <ul >
-                    <li><a href="#">Monitoreo en tiempo real </a></li>
-                    <li><a href="#">Asistencia remota</a></li>  
-                    <li><a href="#">Seguridad general en todas las industrias</a></li>
-      </ul>
- 
+      <li><a><i class="fas fa-user-shield"></i></a></li>
     </div>
+    <h1>Usuarios Conectados </h1>
+    <p>
+      Mejoraramos la seguridad industrial de su personal, 
+      mediante <b>sensores inteligentes </b> </p>
+   
   </div> 
   <div class="column">
+    
     <div class="card">
-      <h1>INFRAESTRUCTURA CONECTADA</h1>
-      <img src="images/InfraestructureCard.png" style="width:100% ">
-      <p >Empleamos plataformas de <b>Gestión centralizada</b>, de acceso fácil y rápido a
-          información relevante sobre el <b>estado de su proceso.</b>
-      </p>
-      <ul >
-        <li><a href="#">Infraestructura virtualizada y escalable</a></li>
-        <li><a href="#">Conecte dispositivos nuevos y existentes</a></li>
-        <li><a href="#">Obtenga informacion significativa</a></li>
-      </ul>
- 
+      <li><a ><i class="fas fa-tools"></i></a></li>
     </div>
-  </div>
-  <div class="column">
-    <div class="card">
-      <h1>PRODUCTOS CONECTADOS</h1>
-      <img src="images/ProductCard.png" style="width:100% ">
-      <p >Realizamos el <b>seguimiento de parametros</b> de desempeño de sus procesos, 
-          para maximisar la <b>flexibilidad, agilidad y calidad </b>de sus productos.
-        </p>
-      <ul >
-                    <li><a href="#">Supervision remota </a></li>
-                    <li><a href="#">Control de calidad eficiente</a></li>
-                    <li><a href="#">Analisis continuo de operacion</a></li>
-                   
-      </ul>
- 
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-      <h1>OPERACIONES CONECTADAS</h1>
-      <img src="images/OperationCard.png" style="width:100% ">
-      <p>Optimizamos el desempeño y uso de los recursos mediante el<b> control y monitoreo en tiempo real</b>  
-        de las operaciones de su empresa  </p>
-      <ul >
-        <li><a href="#"> Implementaciones mas rapidas y efectivas</a></li>
-        <li><a href="#">Seguimiento y rastreo de activos </a></li>
-        <li><a href="#"> Tome las mejores decisiones</a></li>
-                
-      </ul>
- 
-    </div>
-  </div>
-</div>
-</div>
-<!--  -->
+    <h1>Infraestructura Conectada </h1>
+    <p>
+      Infraestructura virtualizada y escalable
+      mediante plataformas de 
+     <b>gestion centralizada </b> </p>
 
+   </div>
+ 
+  <div class="column">
+    <div class="card">
+      <li><a ><i class="fas fa-microchip"></i></a></li>
+    </div>
+    <h1>Productos Conectados </h1>
+    <p>
+      Realizamos el seguimiento de
+      <b> parametros   influyentes</b>
+       en el desempeño de sus procesos.
+        </p>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <li><a><i class="fas fa-dolly"></i></a></li>
+ 
+    </div>
+    <h1>Operaciones Conectadas </h1>
+      <p>
+        Implementamos sistemas de <b>supervision 
+          local/remota </b> y de analisis continuo
+          de operacion  </p>
+    
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <li><a><i class="fas fa-chart-line"></i></a></li>
+      
+    </div>
+    <h1>Fabricacion Conectada </h1>
+      <p>
+        Optimizamos el  uso de  recursos mediante 
+       <b>el control y monitoreo en tiempo real </b> </p>
+        
+      </div>
+    </div>
+    <!--  -->
+    <div style="background: url(images/separador.png);background-position: center;height: 70px;background-repeat: no-repeat;position: relative;top: 10px;z-index: -1;"></div>
+<!-- Construction collage -->
+<div class="collage">
+  <video width="100%" height="500px" controls autoplay>
+    <source src="video/video1.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+
+</div>
 
   <div class="wrapper">
     <table style="border-spacing: 10px;">
@@ -280,6 +292,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
      rgba(0, 0, 0, 0.55);margin-top: -40px;"><center>
        <table><tbody><tr><td style="vertical-align: middle;color:#FFF !important;">© Todos los derechos reservados</td></tr></tbody></table></center></div>
     </div>
+          
   </footer>
 </div>
 <script>
@@ -289,8 +302,7 @@ window.onresize = function(event) {
    // posicionamos el container de nuestras redes sociales
   // cambiando su propiedad css top y left el posicionamiento esta definido
   // como fixed    
-    $(".media_container").css("top" , getdocumentheight()/2+70);
-    $(".media_container").css("left" , getdocumentwidth()-65);
+
 	  var width=$("#wide_container").width();
 		var porciento= (width*100)/1500;
 		var height=(650*porciento)/100;
@@ -315,10 +327,13 @@ window.onresize = function(event) {
 </script> 
 <script>
 	$(document).ready(function(e) { 
-
+    $(".ancla").click(function(e){
+      e.preventDefault();
+      var x=$("#card_containerid").offset().top; 
+      $("html,body").animate({scrollTop: x-150 }, 1000,"swing");
+    }); 
    
-    $(".media_container").css("top" ,  getdocumentheight()/2+70);
-    $(".media_container").css("left" , getdocumentwidth()-65);
+
 		var width=$("#wide_container").width();
 		var width2=$(document).width();
 		var rest1=(width2-1040)/2;
