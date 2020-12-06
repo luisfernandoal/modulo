@@ -18,7 +18,7 @@ transition: all 0.5s;
 z-index: 99999;
 border-left: 127px solid transparent;
 border-right: 127px solid transparent;
-border-top: 152px solid #006a7f;
+border-top: 152px solid hsl(200, 4%, 10%);
 }
 .wrapper {
 	width: 1040px;
@@ -38,7 +38,7 @@ background:#FFF;
 header.smaller {
 	border-left: 0px solid transparent;
 	border-right: 0px solid transparent;
-	border-top: 152px solid #006a7f;
+	border-top: 152px solid hsl(200, 4%, 10%);
 	width:100% !important;
 }
 header.smaller #frase{
