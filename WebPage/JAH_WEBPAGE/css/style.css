@@ -17,6 +17,7 @@ position: fixed;
 transition: all 0.5s;
 z-index: 99999;
 border-left: 127px solid transparent;
+
 border-right: 127px solid transparent;
 border-top: 152px solid hsl(200, 4%, 10%);
 }
@@ -231,6 +232,8 @@ transition-timing-function: ease-in-out;
 }
 #slides {
 	position: relative;
+	
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
 }
 .galerias{
 	position: relative;

@@ -84,20 +84,23 @@
    {
       background: hsl(200, 4%, 10%);
       text-align: center;
-      padding: 20px 10px; 
-      margin-bottom: 30px;
-      height: 400px;
+      padding: 2vh 8vw; 
+      margin: 30px 0px;
+      height: 80vh;
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   
    }
 
-   .p--blanco{
+   .tblanco{
       color:white;
+   
    }
    
  /* The animation code for span IOT */
       @keyframes IOT {
          from {color: white ; }
-         to {color:black;  }
+         to {color:teal;  }
       }
       
 /* The animation code for CARD IOT */
@@ -117,7 +120,8 @@
  /* The animation code for cards IOT */
    .table_cards:hover > .column> .card {
 
-      filter: grayscale(90%);
+      /* filter: grayscale(90%); */
+      background-color:wheat; 
       transform: translateX(-3px) scale(0.9); 
 
    }
@@ -149,6 +153,7 @@
       padding-left:0; 
       padding-right:10px;
       height:250px;
+      /* border:white solid;  */
       
    }
   .column
@@ -167,7 +172,7 @@
    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
    border: solid 2px white; 
    margin: 18px 60px;
-   height: 40%;
+   height: 30%;
    max-height:450px; 
    
 }
@@ -191,7 +196,7 @@
   {
    /* border: solid;  */
    color: white; 
-   font-size: 100%;
+   font-size: 25px;
    font-weight: bold;
    margin: 5px 20px;
   }
@@ -199,32 +204,33 @@
  .column p
 {
    /* border: red solid;  */
-   color: black; 
+   color: wheat; 
    padding:0px 20px; 
-   font-size: 15px;
+   font-size: 16px;
    text-align: center;
-   margin:0;
+   margin:20px;
 }
 /* -Biometric content------------- */
 .biometric_container{
    position: relative; 
    padding: 0;
    margin: 0 ;
-   width:100vw; height: 75vh;
+   width:100vw; height: 80vh;
    overflow: hidden;
-   
+  
     
 }
 
 video { 
    width: 100%;
+   
 }
 
 .content{
  position: absolute;
  top:0; left: 0;
- width:100vw; height: 75vh;
- background-color: #007399;
+ width:100vw; height: 80vh;
+ background-color: black;
  opacity: 0.75;
  z-index: 1;
 }
@@ -280,6 +286,14 @@ video {
    color:grey; 
 }
 
+/* construction container code--------------------- */
+
+
+
+/* --------------------------------------- */
+
+
+
 
 /* Code for cards-collage */
 
@@ -288,6 +302,7 @@ video {
       margin: auto; 
       height: 270vh;
       margin: auto; 
+      overflow: hidden;
 }
 
 .cards-collage table {
@@ -297,18 +312,72 @@ video {
  }
 
  .cards-collage table td  {
-   background-color: #007399;
+   background-color: black; 
+   
    height: 33.33%;
  }
-
- .dipositivos
+/* Card 1 left---------------------- */
+ .dispositivos
 {
 height: 100%;
 width: 100%;
 background-image: url(../images/cards/circuito1.jpg);
-
 background-repeat: no-repeat;
 background-size: 100% 100%; 
+color:white; 
+font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+opacity: 0.95; 
+}
+.dispositivos:hover
+{
+opacity: 1; 
+}
+.dispositivos> .h1t1{
+   position: absolute; top:2% ;left: 30%;
+   font-size: 11vh; 
+}
 
+.dispositivos> .h1s1{
+   position: absolute; top:21% ; left: 30%;
+   font-size: 4vh;
+ 
+}
 
+.dispositivos > p{
+   position: absolute; top:23% ; left: 30%;
+   font-size: 7vh; 
+   width: 22vw;
+   text-align: center;
+   line-height: 8vh;
+   font-weight: bold; 
+   
+}
+.dispositivos > a{
+   position: absolute; top:74% ; left: 40%;
+   text-decoration: none;
+   font-weight: bolder; 
+   font-size: 3vh; color: #2997ff;
+
+}
+.dispositivos a:hover
+{
+   text-decoration: underline;
+}
+/* ------------------------------------ */
+
+.monitoreo_control{
+   width: 100%;
+   height: 900px;
+   overflow: hidden;
+   position: relative;
+   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.24), hsla(317, 45%, 52%, 0.24)),url(../images/cards/monitoreo.jpg);
+   background-size: cover;   
+}
+
+.textos-monitoreo{
+   margin-top: 200px;
+   font-size: 50px;
+   color:#fff;
+    flex-direction: column;
+    text-align: center;
 }
