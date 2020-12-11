@@ -15,6 +15,9 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
+</style>
 <!-- end header font -->
 <script src="js/jquery-1.8.3.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.js"></script>
@@ -22,7 +25,6 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 <script src="js/jquery.animate-enhanced.min.js"></script>
 <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/classie.js"></script>
-
 <script>
   
 
@@ -174,17 +176,38 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
   </div>
 
 <!-- construction container -->
+<div class="construction_container">
 
-  
-   
+   <div class="row" id="row1">
 
+     <video autoplay muted loop >
+      <source src="video/test2.mp4" type="video/mp4"> 
+      Your browser does not support HTML video.
+     </video>
+
+     <div class="row1_content" style="position: absolute;
+      top: 0; left: 0; z-index: 1;  width: 50vw; height:30vh;">
+
+      <h1 style="color:white ; font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+                 width: 32vw ; margin-left: 10vw; font-size: 5vh;  
+                 text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+
+      <a href="#">Más información<i class="fas fa-angle-right"></i></a>
+
+    </div>
+   </div>
+   <div class="row">
+      <div class="column"id="c1"></div>
+      <div class="column"id="c2"></div>
+   </div>
+</div>
 <!-- ------------------------------------- -->
 
 <!-- CARDS IOT  -->
 <div class="card_container" id="card_containerid">
 <h1 style="color:white; font-size: 7vh; ">  Nuestras soluciones<span style="letter-spacing: 3px; "> IoT <i class="fas fa-sim-card"></i></span>  </h1>
 
-<p style="text-align: center; color: white; margin: auto; font-size:3vh; ;max-width: 1200px;"> 
+<p style="text-align: center; color: white;margin: auto; font-size:3vh; ;max-width: 1200px;"> 
       Los datos son el activo mas valioso de su empresa,por ello desarrollamos dispositivos de alta tecnologia
      adaptados a sus requerimientos  recopilamos datos relevantes y los transformamos en informacion valuable para su compañia.
 </p>
@@ -291,7 +314,22 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
 
         </div></td>
         <td  style="width:50%;">
-          <div class="dispositivos2">Dispositivos2</div></td>
+          <div class="dispositivos2">
+            <div class="top_border">
+            <p>Análisis de datos entregados por sensores IoT ubicados en obra,
+               mejoran la productividad de nuestros procesos.
+            </p>
+              <a href="#">Más información  <i class="fas fa-angle-right"></i></a>
+            </div>
+
+           <div class="row">
+             <div class="column"> <i class="fas fa-project-diagram"></i><h1>Conectivity</h1></div>
+             <div class="column"> <i class="fas fa-hard-hat"></i> <h1>Users</h1></div>
+             <div class="column"> <i class="fas fa-cloud-upload-alt"></i> <h1>Cloud</h1></div>
+             <div class="column"> <i class="fas fa-chart-bar"></i> <h1>Data</h1></div>
+           </div>
+           
+          </div></td>
 
       </tr>
       <!-- -------------monitoreo y control---------------------- -->
@@ -314,9 +352,27 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
   </div>
  <!-- -----.------------------------------------------------------ =)-->
 
+<!--  Carousel clients ------------------------------------------>
+
+<div class="clients_carousel">
+  <h1 style="margin: 2vh auto; width: 90%; text-align: center;
+            font-family: 'Roboto', sans-serif ; font-size:2.5vw;">Confiaron en nosotros</h1>
+            <div style="width:15%; background-color:teal; height:1vh; margin:auto; "></div>
+  <ul>
+    <li><img src="images/clients/eltiempo.png" ></li>
+    <li><img src="images/clients/Santa-Ana-Logo-Medium.png" ></li>
+    <li><img src="images/clients/PlazaImperial.png" ></li>
+    <li><img src="images/clients/PlazaImperial.png" ></li>
+    <li><img src="images/clients/PlazaImperial.png" ></li>
+    <li><img src="images/clients/Cofradia.jpg" ></li>
+    <li><img src="images/clients/PlazaImperial.png" ></li>
+    <li><img src="images/clients/PlazaImperial.png" ></li>
+ 
+  </ul>
+</div>
 
 
-
+<!-- --------------------------------------------------------- -->
   <footer>
     <div id="rest1"></div>
     <div id="rest2"></div>

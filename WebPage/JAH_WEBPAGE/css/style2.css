@@ -84,12 +84,11 @@
    {
       background: hsl(200, 4%, 10%);
       text-align: center;
-      padding: 2vh 8vw; 
-      margin: 30px 0px;
-      height: 80vh;
+      padding: 2vh 2vw; 
+      margin: 35px auto;
+      height: 73vh;
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
-      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-   
+      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;   
    }
 
    .tblanco{
@@ -172,7 +171,7 @@
    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
    border: solid 2px white; 
    margin: 18px 60px;
-   height: 30%;
+   height: 35%;
    max-height:450px; 
    
 }
@@ -188,7 +187,7 @@
    color: white; 
    font-size: 50px; 
    display: block; 
-   margin: 15% ;   
+   margin: 8% ;   
     
 }
 
@@ -196,7 +195,7 @@
   {
    /* border: solid;  */
    color: white; 
-   font-size: 25px;
+   font-size: 22px;
    font-weight: bold;
    margin: 5px 20px;
   }
@@ -205,10 +204,10 @@
 {
    /* border: red solid;  */
    color: wheat; 
-   padding:0px 20px; 
-   font-size: 16px;
+   padding:0px 10px; 
+   font-size: 15px;
    text-align: center;
-   margin:20px;
+   margin:10px;
 }
 /* -Biometric content------------- */
 .biometric_container{
@@ -218,7 +217,6 @@
    width:100vw; height: 80vh;
    overflow: hidden;
   
-    
 }
 
 video { 
@@ -287,9 +285,68 @@ video {
 }
 
 /* construction container code--------------------- */
+.construction_container
+{margin: 8vh 0.5vw; height: 84vh; 
+   position: relative; 
 
+ }
+ .construction_container .row{ 
+   margin:1%; 
+   display:block ; height:46%;
+   box-sizing: border-box;
 
+   }
 
+.construction_container #row1
+{ 
+     
+     overflow: hidden;
+     position: relative;
+     filter: brightness(200%);
+     
+}
+.construction_container .row video
+{
+       width: 100%;    
+       position: absolute; 
+       top: -60vh;   
+}
+.row1_content a{
+   position: absolute;
+   left: 17vw;
+   top: 32vh; 
+   text-decoration: none;
+   font-weight: bolder; 
+   font-size: 2vw; color: teal;
+   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.row1_content a:hover{
+   text-decoration: underline;}
+
+.construction_container .column
+{
+
+   float: left;
+   width: 49.5% ;
+   height: 100%;
+   box-sizing: border-box; 
+   filter: grayscale(90%);
+}
+.construction_container #c1
+{margin-right: 0.5%; 
+   background-image: url(../images/collage/banner5.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
+.construction_container #c2
+{margin-left: 0.5%; 
+   background-image: url(../images/collage/banner1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+
+}
 /* --------------------------------------- */
 
 
@@ -312,8 +369,7 @@ video {
  }
 
  .cards-collage table td  {
-   background-color: black; 
-   
+   background-color: black;   
    height: 33.33%;
  }
 /* Card 1 left---------------------- */
@@ -363,6 +419,103 @@ opacity: 1;
 {
    text-decoration: underline;
 }
+/* Card 1 Right---------------------- */
+
+.dispositivos2
+{
+transition: 1s;
+height: 100%;
+width: 100%;
+position: relative;
+background-image: url(../images/collage/14.png);
+background-repeat: no-repeat;
+background-size: 100% 100%; 
+filter:sepia(100%);
+opacity: 0.9;  
+overflow: hidden;
+}
+.dispositivos2 .top_border {
+   /* margin-bottom:0;  */
+   width: 100%;
+   height: 20vh;
+   position: absolute; bottom:5%; 
+   background-color: black;
+   opacity: 0.75;
+   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   
+}
+
+.dispositivos2 .top_border p{
+   color: white; 
+   font-size: 3vh;
+   text-align: left;
+   margin:2vh 12vw;
+   width: 70%;
+   /* border: solid white;  */
+   line-height: 4vh;
+}
+
+
+.dispositivos2  a{
+   position: absolute; top:78% ; left: 65%;
+   text-decoration: none;
+   font-weight: bolder; 
+   font-size: 3vh; color: #2997ff;
+
+}
+.dispositivos2 a:hover { text-decoration: underline;}
+
+.dispositivos2:hover{ filter: none;}
+
+.dispositivos2 .row{    
+   transition: 1.5s;
+      position: absolute;
+      top:57.03%;
+      left:-100%; 
+      width: 100%;
+      height: 13vh;
+      background-color: black ; opacity: 0.65;
+   }
+
+     .dispositivos2:hover .row{
+        left: 0;
+     }
+
+
+.dispositivos2 .row .column{
+      font-size: 6vh;
+      text-align: center; 
+      float: left;
+      width: 23%; height: 15vh;
+      box-sizing: border-box;
+      margin: 0 1%; 
+      
+}
+.dispositivos2 .row .column i{
+   transition:1s; 
+   color: black;
+   opacity: 0.55; 
+}
+
+.dispositivos2:hover .row div i { 
+   color: #2997ff; 
+   opacity: 1;
+      
+}
+.dispositivos2 .row div h1
+{
+transition: 1s;
+ font-size: 38%;
+ color:black; 
+ font-weight: 800;
+ font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+ opacity: 0.65;
+
+}
+
+.dispositivos2:hover .row div h1{  color:#2997ff; opacity: 1;
+    
+   }
 /* ------------------------------------ */
 
 .monitoreo_control{
@@ -381,3 +534,21 @@ opacity: 1;
     flex-direction: column;
     text-align: center;
 }
+
+/* Code clients carousel<------------------------- */
+
+.clients_carousel{width: 95%;  margin: auto;  overflow: hidden; }
+.clients_carousel ul{ display:flex;  padding: 0; width: 200%; animation: carousel 10s infinite alternate}
+.clients_carousel li{  margin: 0 1%; width: 16.66%; height:50%;  list-style: none; }
+.clients_carousel img{ margin: 0;  width:60%; height:20vh; filter: grayscale(100%);}
+
+@keyframes carousel {
+0%{ margin-left:   0}
+15%{ margin-left:  0}
+50%{ margin-left: -50%}
+75%{ margin-left: -75%}
+90%{ margin-left: -95%}
+100%{ margin-left: -95%}
+}
+
+/* -<--<--<-<--<---<-<--------------------------- */
