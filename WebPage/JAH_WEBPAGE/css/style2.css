@@ -96,54 +96,27 @@
    
    }
    
- /* The animation code for span IOT */
+/* The animation code for span IOT */
       @keyframes IOT {
          from {color: white ; }
          to {color:teal;  }
       }
-      
-/* The animation code for CARD IOT */
-      @keyframes IOT-card {
-         from {border: solid 2px white; }
-         to  { border: solid 2px black;}
-      }
-      .card_container>h1>span{
+
+.card_container>h1>span{
 
       animation-name:IOT;
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-direction: alternate;  
       animation-timing-function: ease-in-out;  
-      }
-
- /* The animation code for cards IOT */
-   .table_cards:hover > .column> .card {
-
-      /* filter: grayscale(90%); */
-      background-color:wheat; 
-      transform: translateX(-3px) scale(0.9); 
-
-   }
- 
-   .table_cards > .column> .card:hover {
-   
-   filter: none;
-   transform: translateX(3px) scale(1.0); 
-   animation-name:IOT-card;
-   animation-duration: 1s;
-   animation-iteration-count: 1;
-   animation-direction: alternate;  
-   animation-timing-function: linear; 
-   border: solid 2px black; 
-   }
-
-   .table_cards > .column> .card:hover > li a {
-    color:black; 
-   }
+}
+.table_cards:hover > .column> .card li a {  color:black; }
+.table_cards > .column> .card:hover { transform: translateX(3px) scale(1.2); background-color:wheat;  }
+.table_cards > .column> .card:hover > li a {  color:teal;  }
 
 /* --------------------------------------- */
  /* --------------------------------- */
-   .table_cards{
+.table_cards{
       margin: 10px auto 15px; 
       width: 1200px;
       max-width: 1300px;
@@ -152,63 +125,64 @@
       padding-left:0; 
       padding-right:10px;
       height:250px;
-      /* border:white solid;  */
-      
-   }
-  .column
-  {
+      /* border:white solid;  */  }
+
+.column
+{
       width:20%;
       display:table-cell;
       /* border: solid;  */
-  }
-
- 
-  .card
-  {    
+}
+.card
+{      
    transition: 0.5s;
    border-radius: 5px;
    background-color: teal;
    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
-   border: solid 2px white; 
-   margin: 18px 60px;
-   height: 35%;
+   border: solid 1px white; 
+   margin: 1vh 7vw;
+   height: 10vh;
+   min-width:5vw;
    max-height:450px; 
-   
 }
 
 .column .card li 
 {
     list-style: none;
     height: 100%;
+
 }
 .column .card li a
 {
    transition: 1s;
    color: white; 
-   font-size: 50px; 
+   font-size: 5vh; 
    display: block; 
-   margin: 8% ;   
+   margin: 20% ;   
     
 }
 
-  .column h1
-  {
+.column h1
+{
    /* border: solid;  */
    color: white; 
-   font-size: 22px;
+   font-size: 20px;
    font-weight: bold;
-   margin: 5px 20px;
-  }
+   margin: 15px 20px;
+}
 
- .column p
+.column p
 {
    /* border: red solid;  */
    color: wheat; 
-   padding:0px 10px; 
-   font-size: 15px;
+   padding:0 1.1vw; 
+   font-size: 2.2vh;
    text-align: center;
-   margin:10px;
+   margin:4vh;
 }
+.column p b{ color: teal; }
+
+
 /* -Biometric content------------- */
 .biometric_container{
    position: relative; 
@@ -552,3 +526,21 @@ transition: 1s;
 }
 
 /* -<--<--<-<--<---<-<--------------------------- */
+
+/* Whats app--- overall */
+
+.ws_overall{ position: fixed; top:70%; right:0.5%; width: 3vw; height:6.2vh; 
+             z-index: 9999999;   background-color: #1ebea5;  border-radius: 45%;
+             box-shadow: 2px 2px 5px #888888;
+             animation: ws 1s infinite alternate linear
+}
+.ws_overall a{   color:white; font-size: 2.6vw; width:100%; position: absolute; left:14%; top:0%; }
+@keyframes ws {
+   0%{ transform: scale(1);}
+   25%{ transform: scale(1.1);}
+   50%{ transform: scale(1.15);}
+   75%{ transform: scale(1.18);}
+   100%{ transform: scale(1.20);}
+   }
+
+/* - */
