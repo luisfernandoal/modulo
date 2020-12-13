@@ -331,7 +331,7 @@ video {
 .cards-collage{
 
       margin: auto; 
-      height: 270vh;
+      height: 300vh;
       margin: auto; 
       overflow: hidden;
 }
@@ -494,7 +494,7 @@ transition: 1s;
 
 .monitoreo_control{
    width: 100%;
-   height: 900px;
+   height: 100%;
    overflow: hidden;
    position: relative;
    background: linear-gradient(to right,hsla(340, 95%, 50%, 0.24), hsla(317, 45%, 52%, 0.24)),url(../images/cards/monitoreo.jpg);
@@ -508,6 +508,36 @@ transition: 1s;
     flex-direction: column;
     text-align: center;
 }
+
+
+.monitoreo_control2{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.26), hsla(317, 45%, 52%, 0.28)),url(../images/cards/monitoreo2.jpg);
+   background-size: cover;   
+}
+
+/* -----------prototipado------------------------------------ */
+.prototipado{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.26), hsla(345, 11%, 15%, 0.26)),url(../images/cards/prototipado.jpg);
+   background-size: cover;  
+}
+
+.modelado_arq{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.26), hsla(345, 11%, 15%, 0.26)),url(../images/cards/modelado.jpg);
+   background-size: cover;  
+}
+
 
 /* Code clients carousel<------------------------- */
 
