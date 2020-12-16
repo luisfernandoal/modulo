@@ -401,7 +401,7 @@ transition: 1s;
 height: 100%;
 width: 100%;
 position: relative;
-background-image: url(../images/collage/14.png);
+background-image: url(../images/collage/TestIOT.jpg);
 background-repeat: no-repeat;
 background-size: 100% 100%; 
 filter:sepia(100%);
@@ -412,7 +412,7 @@ overflow: hidden;
    /* margin-bottom:0;  */
    width: 100%;
    height: 20vh;
-   position: absolute; bottom:5%; 
+   position: absolute; top:19vh; 
    background-color: black;
    opacity: 0.75;
    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -442,9 +442,9 @@ overflow: hidden;
 .dispositivos2:hover{ filter: none;}
 
 .dispositivos2 .row{    
-   transition: 1.5s;
+   transition: 0.8s;
       position: absolute;
-      top:57.03%;
+      top:66vh;
       left:-100%; 
       width: 100%;
       height: 13vh;
@@ -559,12 +559,12 @@ transition: 1s;
 
 /* Whats app--- overall */
 
-.ws_overall{ position: fixed; top:70%; right:0.5%; width: 3vw; height:6.2vh; 
-             z-index: 9999999;   background-color: #1ebea5;  border-radius: 45%;
-             box-shadow: 2px 2px 5px #888888;
-             animation: ws 1s infinite alternate linear
+.ws_overall{ position: fixed; top:70%; right:0.5%; width: 2.9vw; height:6.2vh; z-index: 9999999;   
+             background-color: #1ebea5; border-radius: 55%;  border: solid teal ;             
+             animation: ws 0.8s infinite alternate linear;             
 }
-.ws_overall a{   color:white; font-size: 2.6vw; width:100%; position: absolute; left:14%; top:0%; }
+.ws_overall a{ color:white; font-size: 2.6vw; width:100%; margin-left:0.3vw; margin-top:0;}
+    
 @keyframes ws {
    0%{ transform: scale(1);}
    25%{ transform: scale(1.1);}
@@ -574,3 +574,32 @@ transition: 1s;
    }
 
 /* - */
+
+/* -------------------------------Contact container.............. */
+
+.contact_container .main_column{ float:left; width: 50%;height: 100%;box-sizing: border-box;}
+
+#column_left{position: relative; background-image: url(../images/Footer/a.jpg); background-repeat: no-repeat; background-size:100% 100%; }
+#column_right{position: relative; background-image: url(../images/nosotros.png); background-repeat: no-repeat; background-size:100% 100%; opacity:0.75; }
+.covering{ 
+ position: absolute; top:0; left:0; width: 100%; height: 100%;opacity: 0.75;
+ background-image: linear-gradient(to bottom,black, teal, wheat , teal,black);
+}
+
+.contact_container .main_column .covering ul {   padding-left: 8vw;}
+.contact_container .main_column .covering ul li
+{
+      transition:0.4s;
+      list-style: none;
+      float: left;
+      margin: 0 1vw; 
+      padding: 1vw;
+      font-size:5vh;
+      background-color:hsl(200, 4%, 10%);
+      border-radius: 15%;
+      border: inset 1px; 
+}
+.contact_container .main_column .covering ul li a{  color: teal;} 
+.contact_container .main_column .covering ul li:hover{border:outset 2px; background-color: white;}
+
+/* ----------------------------------------------------- */
