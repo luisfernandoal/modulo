@@ -580,10 +580,32 @@ transition: 1s;
 .contact_container .main_column{ float:left; width: 50%;height: 100%;box-sizing: border-box;}
 
 #column_left{position: relative; background-image: url(../images/Footer/a.jpg); background-repeat: no-repeat; background-size:100% 100%; }
-#column_right{position: relative; background-image: url(../images/nosotros.png); background-repeat: no-repeat; background-size:100% 100%; opacity:0.75; }
+#column_right{position: relative;background-color: hsl(200, 4%, 10%);background-repeat: no-repeat; background-size:100% 100%; }
 .covering{ 
  position: absolute; top:0; left:0; width: 100%; height: 100%;opacity: 0.75;
  background-image: linear-gradient(to bottom,black, teal, wheat , teal,black);
+ 
+}
+.form{
+   margin-left: 5%;
+}
+
+.covering.newsletter{
+   
+   margin-top: 10%;
+   width: 100%;
+   display: none;
+   }
+
+.covering.newsletter--modifier{
+   
+   display: block;
+}
+
+
+.encuentranos{
+   margin-top: 14%;
+   margin-left: 5%;
 }
 
 .contact_container .main_column .covering ul {   padding-left: 8vw;}
@@ -602,4 +624,40 @@ transition: 1s;
 .contact_container .main_column .covering ul li a{  color: teal;} 
 .contact_container .main_column .covering ul li:hover{border:outset 2px; background-color: white;}
 
+.main-column-right{
+   margin-top: 10%;
+   display:flex;
+   justify-content: space-between;
+}
+.content-menu{
+   margin: 0% 3%;
+        text-align: center;    
+        
+}
+
+.content-menu h2{
+   color: #F6CD8F;
+   border: none;
+}
+
+.parrafo{
+   margin-top: 30%;
+}
+
+.linea{
+   text-decoration: none;
+   color: #F6CD8F;
+}
+
+.linea:hover{
+   text-decoration: underline;
+}
+
+.content-menu p{
+   text-align: center; 
+   margin-top: 10%;
+   color: #ccc;
+   border-bottom: 1px solid #F4BD76;
+   padding-bottom: 10%;
+}
 /* ----------------------------------------------------- */
