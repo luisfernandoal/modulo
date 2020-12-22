@@ -497,16 +497,38 @@ transition: 1s;
    height: 100%;
    overflow: hidden;
    position: relative;
-   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.24), hsla(317, 45%, 52%, 0.24)),url(../images/cards/monitoreo.jpg);
+   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.5)),url(../images/cards/monitoreo.jpg);
    background-size: cover;   
+   
 }
 
 .textos-monitoreo{
-   margin-top: 200px;
-   font-size: 50px;
+   margin-top: 10%;
+   margin-left: 5%;
+   margin-right: 5%;
+   font-size: 40px;
    color:#fff;
     flex-direction: column;
     text-align: center;
+}
+
+.parrafoo{
+   text-align: center;
+   margin-top: 15%;
+   margin-left: 5%;
+   margin-right: 5%;
+   font-size: 35px;
+   color:#fff;
+}
+
+.mas_informacion{
+   margin-top: 15%;
+   margin-left: 35%;
+ 
+   position: absolute;
+   text-decoration: none;
+   font-size: 35px; color: #fff;
+   text-align: center;
 }
 
 
@@ -515,7 +537,7 @@ transition: 1s;
    height: 100%;
    overflow: hidden;
    position: relative;
-   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.26), hsla(317, 45%, 52%, 0.28)),url(../images/cards/monitoreo2.jpg);
+   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.5)),url(../images/cards/monitoreo2.jpg);
    background-size: cover;   
 }
 
@@ -525,7 +547,7 @@ transition: 1s;
    height: 100%;
    overflow: hidden;
    position: relative;
-   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.26), hsla(345, 11%, 15%, 0.26)),url(../images/cards/prototipado.jpg);
+   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.5), hsla(345, 11%, 15%, 0.5)),url(../images/cards/prototipado.jpg);
    background-size: cover;  
 }
 
@@ -534,7 +556,7 @@ transition: 1s;
    height: 100%;
    overflow: hidden;
    position: relative;
-   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.26), hsla(345, 11%, 15%, 0.26)),url(../images/cards/modelado.jpg);
+   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.5), hsla(345, 11%, 15%, 0.5)),url(../images/cards/modelado.jpg);
    background-size: cover;  
 }
 
