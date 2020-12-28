@@ -581,19 +581,21 @@ transition: 1s;
 
 /* Whats app--- overall */
 
-.ws_overall{ position: fixed; top:70%; right:0.5%; width: 2.9vw; height:6.2vh; z-index: 9999999;   
-             background-color: #1ebea5; border-radius: 55%;  border: solid teal ;             
-             animation: ws 0.8s infinite alternate linear;             
+.ws_overall{ position: fixed; top:70%; right:0.5%; width:3%; max-height:6.2vh; z-index: 9999999;   
+   background-color: #1ebea5; border-radius: 55%;  border: solid teal ;             
+   animation: ws 0.8s infinite alternate linear;       
+   text-align: center;   transition: 0.5s;    
 }
-.ws_overall a{ color:white; font-size: 2.6vw; width:100%; margin-left:0.3vw; margin-top:0;}
-    
+.ws_overall a{ color:white; font-size: 2.6vw; width:100%;}
+.ws_overall:hover{background-color: black; border: solid black; }
+
 @keyframes ws {
-   0%{ transform: scale(1);}
-   25%{ transform: scale(1.1);}
-   50%{ transform: scale(1.15);}
-   75%{ transform: scale(1.18);}
-   100%{ transform: scale(1.20);}
-   }
+0%{ transform: scale(1);}
+25%{ transform: scale(1.1);}
+50%{ transform: scale(1.15);}
+75%{ transform: scale(1.18);}
+100%{ transform: scale(1.20);}
+}
 
 /* - */
 
@@ -608,26 +610,15 @@ transition: 1s;
  background-image: linear-gradient(to bottom,black, teal, wheat , teal,black);
  
 }
-.form{
-   margin-left: 5%;
-}
-
-.covering.newsletter{
-   
-   margin-top: 10%;
-   width: 100%;
-   display: none;
-   }
-
-.covering.newsletter--modifier{
-   
-   display: block;
-}
-
+.form{ margin:auto ; width: 95%;}
+.form > h1{ color:white; text-decoration: overline; margin-top: 7%;}
+.form > p{ color:white; }
 
 .encuentranos{
-   margin-top: 14%;
-   margin-left: 5%;
+   
+   width:98%; margin:3% auto; 
+   text-align: center;
+
 }
 
 .contact_container .main_column .covering ul {   padding-left: 8vw;}
