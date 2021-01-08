@@ -260,7 +260,7 @@ video {
 
 /* construction container code--------------------- */
 .construction_container
-{margin: 8vh 0.5vw; height: 84vh; 
+{margin: 12vh 0.5vw; height: 84vh; 
    position: relative; 
 
  }
@@ -351,7 +351,7 @@ video {
 {
 height: 100%;
 width: 100%;
-background-image: url(../images/cards/circuito1.jpg);
+background-image: url(../images/cards/circuito1-min.jpg);
 background-repeat: no-repeat;
 background-size: 100% 100%; 
 color:white; 
@@ -497,7 +497,7 @@ transition: 1s;
    height: 100%;
    overflow: hidden;
    position: relative;
-   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.5)),url(../images/cards/monitoreo.jpg);
+   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.5)),url(../images/cards/monitoreo-min.jpg);
    background-size: cover;   
    
 }
@@ -511,7 +511,35 @@ transition: 1s;
     flex-direction: column;
     text-align: center;
 }
+.textos-monitoreo h3{
+   position: absolute;top:0; left:0.2vw;
+   font-size: 3.9vw;
+   transform:skew(5deg,-17deg);
+   color: white; 
+   width: 56%;
+   opacity: 0.27;
+}
+.w1 {position:absolute; font-size: 2.4vw;}
+.word1{ top:25vh; left:11vw;
+        transform:skew(5deg,-20deg);}
+.word2{ top:31vh; left:13vw;
+        transform:skew(5deg,-20deg); }
+.word3{ top:38vh; left:17vw;
+        transform:skew(5deg,-20deg);}
+.word4{top:49vh; left:22vw;
+   transform:skew(5deg,-20deg);}
+.word5{top:55vh; left:25vw;
+     transform:skew(5deg,-20deg);}
 
+.textos-monitoreo a
+{  position: absolute;
+   font-size: 2vw;
+   top:75vh; left:26vw;
+   transform:skew(1deg,0deg);
+   color: #2997ff; 
+   text-decoration: none; 
+}
+.textos-monitoreo a:hover{ text-decoration:underline;}
 .parrafoo{
    text-align: center;
    margin-top: 15%;
@@ -537,7 +565,7 @@ transition: 1s;
    height: 100%;
    overflow: hidden;
    position: relative;
-   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.5)),url(../images/cards/monitoreo2.jpg);
+   background: linear-gradient(to right,hsla(340, 95%, 50%, 0.5), hsla(317, 45%, 52%, 0.5)),url(../images/cards/monitoreo2-min.jpg);
    background-size: cover;   
 }
 
@@ -547,7 +575,7 @@ transition: 1s;
    height: 100%;
    overflow: hidden;
    position: relative;
-   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.5), hsla(345, 11%, 15%, 0.5)),url(../images/cards/prototipado.jpg);
+   background: linear-gradient(to right,hsla(345, 11%, 15%, 0.5), hsla(345, 11%, 15%, 0.5)),url(../images/cards/prototipado-min.jpg);
    background-size: cover;  
 }
 
@@ -608,18 +636,19 @@ transition: 1s;
 .covering{ 
  position: absolute; top:0; left:0; width: 100%; height: 100%;opacity: 0.75;
  background-image: linear-gradient(to bottom,black, teal, wheat , teal,black);
- 
+ font-family: 'Roboto', sans-serif ;
 }
-.form{ margin:auto ; width: 95%;}
-.form > h1{ color:white; text-decoration: overline; margin-top: 7%;}
-.form > p{ color:white; }
+.form{ margin:auto ; width: 95%; }
+.form > h1{ color:white;  margin-top: 2%; font-size:8vw; opacity:0.2;}
+.form > p{   color:white;  text-align: center; font-size:3.1vh; 
+             width: 90%; position: absolute; top:22vh; margin:auto; }
 
 .encuentranos{
-   
    width:98%; margin:3% auto; 
    text-align: center;
-
+   color: black; 
 }
+.encuentranos> h2{ font-size: 2.5vw; color:white;  }
 
 .contact_container .main_column .covering ul {   padding-left: 8vw;}
 .contact_container .main_column .covering ul li
@@ -630,31 +659,40 @@ transition: 1s;
       margin: 0 1vw; 
       padding: 1vw;
       font-size:5vh;
-      background-color:hsl(200, 4%, 10%);
+      background-color:white;
       border-radius: 15%;
       border: inset 1px; 
 }
 .contact_container .main_column .covering ul li a{  color: teal;} 
-.contact_container .main_column .covering ul li:hover{border:outset 2px; background-color: white;}
+.contact_container .main_column .covering ul li:hover{border:outset 2px; }
 
 .main-column-right{
-   margin-top: 10%;
-   display:flex;
-   justify-content: space-between;
-}
-.content-menu{
-   margin: 0% 3%;
-        text-align: center;    
-        
+   font-family: 'Roboto', sans-serif ;
+   display: inline-block;
+   width: 58%;
+   margin:auto; 
+   position:absolute; 
+   top:7%;
+   left: 30%;
 }
 
 .content-menu h2{
    color: #F6CD8F;
    border: none;
 }
+.content-menu h1{
+  font-size:1.3vw;
+  color: white; 
+  margin:2% 0; 
+  padding: 0;
+  font-weight: lighter;
 
-.parrafo{
-   margin-top: 30%;
+}
+.content-menu p{
+   color:white;
+   width: 70%;
+   text-align: justify;
+   font-size:1.2vw;
 }
 
 .linea{
@@ -662,15 +700,9 @@ transition: 1s;
    color: #F6CD8F;
 }
 
-.linea:hover{
-   text-decoration: underline;
-}
-
-.content-menu p{
-   text-align: center; 
-   margin-top: 10%;
-   color: #ccc;
-   border-bottom: 1px solid #F4BD76;
-   padding-bottom: 10%;
-}
 /* ----------------------------------------------------- */
+
+/* Desde aqui casosdeexito.html */
+
+
+/* fin casosdeexito.html */
