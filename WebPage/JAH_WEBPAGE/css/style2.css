@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
+
 /* le damos caracteristicas al contenedor
    tamaño definido por el contenido de este*/
    .media_container
@@ -85,8 +88,8 @@
       background: hsl(200, 4%, 10%);
       text-align: center;
       padding: 2vh 2vw; 
-      margin: 35px auto;
-      height: 73vh;
+      margin-bottom: 13vh;
+      height: 77vh;
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
       font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;   
    }
@@ -117,21 +120,20 @@
 /* --------------------------------------- */
  /* --------------------------------- */
 .table_cards{
-      margin: 10px auto 15px; 
-      width: 1200px;
-      max-width: 1300px;
+      margin: auto; 
+      width: 95%;
+      height:auto;
       display: table; 
       box-sizing: border-box; 
-      padding-left:0; 
-      padding-right:10px;
-      height:250px;
-      /* border:white solid;  */  }
+    
+  }
 
 .column
 {
-      width:20%;
+      width:2%;
       display:table-cell;
-      /* border: solid;  */
+      
+
 }
 .card
 {      
@@ -140,10 +142,10 @@
    background-color: teal;
    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
    border: solid 1px white; 
-   margin: 1vh 7vw;
-   height: 10vh;
-   min-width:5vw;
-   max-height:450px; 
+   margin: 1.2vh 6vw;
+   width: 5.5vw;
+   height: auto;
+
 }
 
 .column .card li 
@@ -156,7 +158,7 @@
 {
    transition: 1s;
    color: white; 
-   font-size: 5vh; 
+   font-size: 4.5vh; 
    display: block; 
    margin: 20% ;   
     
@@ -164,11 +166,10 @@
 
 .column h1
 {
-   /* border: solid;  */
    color: white; 
-   font-size: 20px;
-   font-weight: bold;
-   margin: 15px 20px;
+    font-size: 2.2vh;
+    width: 10vw;
+    margin: auto;
 }
 
 .column p
@@ -178,32 +179,32 @@
    padding:0 1.1vw; 
    font-size: 2.2vh;
    text-align: center;
-   margin:4vh;
+   margin:3vh;
 }
 .column p b{ color: teal; }
 
 
 /* -Biometric content------------- */
 .biometric_container{
+   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;   
    position: relative; 
    padding: 0;
    margin: 0 ;
-   width:100vw; height: 80vh;
+   width:100%; height: auto;
    overflow: hidden;
-  
 }
 
 video { 
-   width: 100%;
-   
+   width: 100%; 
+   height: auto;
 }
 
 .content{
  position: absolute;
  top:0; left: 0;
- width:100vw; height: 80vh;
+ width:100%; height: 100%;
  background-color: black;
- opacity: 0.75;
+ opacity: 0.6;
  z-index: 1;
 }
 
@@ -215,38 +216,36 @@ video {
    width: 75vw;
    margin:0; padding: 0;
    color:white; 
-   font-family:Verdana, Geneva, Tahoma, sans-serif ; 
-   font-size:6vh;
+   font-size:3vw;
    text-align: right;
-   /* border:solid;  */
 }
 .content p{
-   line-height: 7vh; 
+   
    position:absolute;
-   top:  40%; 
+   top:  50%; 
    left: 10%;
-   width: 40vw;
+   width: 50vw;
    margin:0; padding: 0;
    text-align: center;
    color:white; 
    font-family:Verdana, Geneva, Tahoma, sans-serif ; 
-   font-size:4vh;
+   font-size:2vw;
 
 }
 
 .biometric_container .content > a
 {
    transition: 0.3s; 
-   width: 12vw;
+   width: 13vw;
    height: 2vh;
-   position: absolute; top:  65%; left: 22%;
+   position: absolute; top:  65%; left: 28%;
    text-align: center;
    padding: 1%;
    text-decoration: none;
    color:white; 
    border:  outset  white; 
    font-weight: bolder;
-   font-size: 2vh;
+   font-size: 1.2vw;
    font-family: Arial, Helvetica, sans-serif;
    border-radius: 4%;
 }
@@ -260,15 +259,15 @@ video {
 
 /* construction container code--------------------- */
 .construction_container
-{margin: 12vh 0.5vw; height: 84vh; 
-   position: relative; 
-
+{ margin: 12vh 0.5vw; height: 84vh; 
+   position: relative;  
+   width: 100%;
  }
  .construction_container .row{ 
    margin:1%; 
+   width: 98%;
    display:block ; height:46%;
    box-sizing: border-box;
-
    }
 
 .construction_container #row1
@@ -281,17 +280,18 @@ video {
 }
 .construction_container .row video
 {
-       width: 100%;    
-       position: absolute; 
-       top: -60vh;   
+   position:absolute;
+   bottom: 1%;     
+   width: 100%;      
+   height: auto; 
 }
 .row1_content a{
    position: absolute;
-   left: 17vw;
-   top: 32vh; 
+   left:  17vw;
+   top:   30vh; 
    text-decoration: none;
-   font-weight: bolder; 
-   font-size: 2vw; color: teal;
+   font-weight: bold; 
+   font-size: 3.5vh; color: teal;
    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .row1_content a:hover{
@@ -299,7 +299,6 @@ video {
 
 .construction_container .column
 {
-
    float: left;
    width: 49.5% ;
    height: 100%;
@@ -512,32 +511,27 @@ transition: 1s;
     text-align: center;
 }
 .textos-monitoreo h3{
-   position: absolute;top:0; left:0.2vw;
-   font-size: 3.9vw;
-   transform:skew(5deg,-17deg);
-   color: white; 
-   width: 56%;
+   position: absolute;top:2vh; left:2vw;
+   font-size: 120%;
+   color:  white;
+   width: 100%;
    opacity: 0.27;
 }
-.w1 {position:absolute; font-size: 2.4vw;}
-.word1{ top:25vh; left:11vw;
-        transform:skew(5deg,-20deg);}
-.word2{ top:31vh; left:13vw;
-        transform:skew(5deg,-20deg); }
-.word3{ top:38vh; left:17vw;
-        transform:skew(5deg,-20deg);}
-.word4{top:49vh; left:22vw;
-   transform:skew(5deg,-20deg);}
-.word5{top:55vh; left:25vw;
-     transform:skew(5deg,-20deg);}
+.w1 {position:absolute; font-size:70%;}
+.word1{ top:20vh; left:11vw; } 
+.word2{ top:28vh; left:11vw; }
+.word3{ top:36vh; left:11vw;}
+.word4{ top:44vh; left:11vw;}
+.word5{ top:52vh; left:11vw; }
 
 .textos-monitoreo a
 {  position: absolute;
-   font-size: 2vw;
-   top:75vh; left:26vw;
-   transform:skew(1deg,0deg);
-   color: #2997ff; 
+   font-size: 70%;
+   top:76vh; left:27vw;
+   color: hsla(340, 95%, 50%, 0.5); 
+   font-weight: bold;
    text-decoration: none; 
+   
 }
 .textos-monitoreo a:hover{ text-decoration:underline;}
 .parrafoo{
@@ -569,6 +563,10 @@ transition: 1s;
    background-size: cover;   
 }
 
+
+
+
+
 /* -----------prototipado------------------------------------ */
 .prototipado{
    width: 100%;
@@ -578,6 +576,12 @@ transition: 1s;
    background: linear-gradient(to right,hsla(345, 11%, 15%, 0.5), hsla(345, 11%, 15%, 0.5)),url(../images/cards/prototipado-min.jpg);
    background-size: cover;  
 }
+.prototipado a { position: absolute;
+   font-size: 2vw;
+   top:55vh; left:26vw;
+   color: grey; 
+   text-decoration: none;  }
+.prototipado  a:hover{ text-decoration:underline;}
 
 .modelado_arq{
    width: 100%;
@@ -587,7 +591,13 @@ transition: 1s;
    background: linear-gradient(to right,hsla(345, 11%, 15%, 0.5), hsla(345, 11%, 15%, 0.5)),url(../images/cards/modelado.jpg);
    background-size: cover;  
 }
-
+.modelado_arq a { position: absolute;
+   font-size: 2vw;
+   top:55vh; left:26vw;
+   color: black; 
+   font-weight: bold;
+   text-decoration: none;  }
+   .modelado_arq a:hover{ text-decoration:underline;}
 
 /* Code clients carousel<------------------------- */
 
@@ -701,8 +711,469 @@ transition: 1s;
 }
 
 /* ----------------------------------------------------- */
+/* Code for  casos_de_exito.html  */
 
-/* Desde aqui casosdeexito.html */
+
+#wide_container .row1
+{
+   background-color: black;
+   position: relative;
+   top: 25vh;
+   left: 11vw;
+   width: 77%;
+   height: 35%;
+   box-shadow: 5px 10px 8px #888888;
+}
+#wide_container h1{ 
+position: absolute; left: 44vw; 
+font-size: 2.3vw; width: 40%; font-weight: lighter;
+text-align: left;
+color:white;
+font-family: 'Roboto', sans-serif ;
+}
+#wide_container p{ 
+   position: absolute; left: 43vw; top: 20vh;
+   font-size: 1.1vw; width: 40%; 
+   color: white;
+   font-family: 'Roboto', sans-serif ;
+   }
+.paralle1{
+   position:absolute;
+   left:0; 
+   width: 30%; 
+   height: 98%; 
+   background-image: url(../images/casosexito/Cofradia.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-style: groove;
+  
+}
+.paralle2{
+   position: relative;
+   left:20vw;
+   width: 25%; 
+   height: 98%; 
+   border-style: groove;
+   background-image: url(../images/casosexito/Cofradia2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+   -ms-transform: skew(20deg);
+   -o-transform: skew(20deg);
+   transform: skew(20deg);
+}
+
+#wide_container .row2
+{
+   background-color: teal;
+   position: relative;
+   top: 32vh;
+   left: 11vw;
+   width: 77%;
+   height: 35%;
+   box-shadow: 5px 10px 8px #888888;
+}
+.paralle12{
+   position:absolute;
+   left:0;  
+   width: 30%; 
+   height: 98%; 
+   background-image: url(../images/casosexito/1.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-style: groove;
+
+}
+.paralle22{
+   position: relative;
+   left:19vw;
+   width: 27%; 
+   height: 98%; 
+   border-style: groove;
+   background-image: url(../images/casosexito/4.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#wide_container .row3
+{
+   background-color: dodgerblue;
+   position: relative;
+   top: 39vh;
+   left: 11vw;
+   width: 77%;
+   height: 35%;
+   box-shadow: 5px 10px 8px #888888;
+
+}
+#wide_container>.row3 h1{ 
+position: absolute; left: 42vw;
+font-size: 2.3vw; width: 40%; font-weight: lighter;
+text-align: center;
+color:white;
+font-family: 'Roboto', sans-serif ;
+}
+.paralle13{
+   position:absolute;
+   left:0;  
+   width: 30%; 
+   height: 98%; 
+   background-image: url(../images/casosexito/Sensor.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-style: groove;
+}
+.paralle23{
+   position: relative;
+   left:20vw;
+   width: 25%; 
+   height: 98%; 
+   border-style: groove;
+   background-image: url(../images/estructuras/estructuras-y-cubiertas3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+   -ms-transform: skew(20deg);
+   -o-transform: skew(20deg);
+   transform: skew(20deg);
+}
+
+#wide_container .row4
+{
+   background-color: #91908f;
+   position: relative;
+   top: 46vh;
+   left: 11vw;
+   width: 77%;
+   height: 35%;
+   box-shadow: 5px 10px 8px #888888;
+
+}
+.paralle4{
+   position:absolute;
+   left:0;  
+   width: 30%; 
+   height: 98%; 
+   background-image: url(../images/casosexito/14.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-style: groove;
+}
+.paralle42{
+   position: relative;
+   left:19vw;
+   width: 27%; 
+   height: 98%; 
+   border-style: groove;
+   background-image: url(../images/casosexito/15.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#wide_container .row5
+{
+   background-color:#ef9b3b;
+   position: relative;
+   top: 53vh;
+   left: 11vw;
+   width: 77%;
+   height: 35%;
+   box-shadow: 5px 10px 8px #888888;
+
+}
+.paralle5{
+   position:absolute;
+   left:0;  
+   width:30%; 
+   height: 98%; 
+   background-image: url(../images/casosexito/Eltiempo1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-style: groove;
+  
+}
+.paralle52{
+   position: relative;
+   left:20vw;
+   width: 25%; 
+   height: 98%; 
+   border-style: groove;
+   background-image: url(../images/casosexito/ElTiempo2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+   -ms-transform: skew(20deg);
+   -o-transform: skew(20deg);
+   transform: skew(20deg);
+}
+
+#wide_container .row6
+{
+   background-color: darkseagreen;
+   position: relative;
+   top: 60vh;
+   left: 11vw;
+   width: 77%;
+   height: 35%;
+   box-shadow: 5px 10px 8px #888888;
+
+}
+.paralle6{
+   position:absolute;
+   left:0;  
+   width: 30%; 
+   height: 98%; 
+   background-image: url(../images/casosexito/6.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-style: groove;
+  
+}
+.paralle62{
+   position: relative;
+   left:19vw;
+   width: 27%; 
+   height: 98%; 
+   border-style: groove;
+   background-image: url(../images/casosexito/8.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
 
 
-/* fin casosdeexito.html */
+
+/* ------------------------------------------------- */
+/* Code for Nosotros.html  */
+
+#wide_container .container1
+{
+   position: relative;
+   top: 25vh;
+   width: 85%;
+   height: 40vh;
+   margin: auto; 
+   background-color: #f5f5f5;
+
+}
+#wide_container .container1 h1
+{
+   color:black; 
+   font-size: 3vw;
+   position: absolute;
+   top:4vh;
+   left: 3.2vw;
+   font-family: 'Roboto', sans-serif ;
+}
+#wide_container .container1 p
+{
+   width: 50%;
+   color:#bcbcbc;
+   position: absolute;
+   top:2vh; 
+   left: 40vw;
+   font-family: 'Roboto', sans-serif ;
+   font-size: 1.3vw;
+}
+
+
+#wide_container .container2
+{
+   position: relative;
+   top: 28vh;
+   width: 85%;
+   height: 40vh;
+   margin: auto; 
+   background-color: black;  
+   box-sizing: border-box;
+}
+.container2 #Title{ 
+                      font-family: 'Roboto', sans-serif ;
+                       position:absolute; left:4vw; 
+                       color :white; width:30%; text-align: left;
+                       }
+
+.container2 #SubTitle{
+                        font-family: 'Roboto', sans-serif ;
+                         position:absolute; left:4vw; top:27vh;
+                        color :white; width:40%; text-align: left;}
+
+.container2 .ro1{
+  
+   position: absolute;
+   width: 50%;
+   height: 100%; 
+   right: 0;
+   box-sizing: border-box;
+}
+.container2 .col{
+
+   float:left;
+   width: 33%;
+   height: 100%;
+   border-right: solid white 0.14vw;
+
+}
+.container2 #c1{
+   background-image: url(../images/hidraulica/hidraulica2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.container2 #c2{
+   background-image: url(../images/manteni/mantenimiento1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.container2 #c3{
+   background-image: url(../images/obra/obra-civil1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container3{
+   position: relative;
+   top: 31vh;
+   width: 85%;
+   height: 45vh;
+   margin: auto; 
+   background-color: #f5f5f5;
+
+}
+.container3 .colx
+{
+   float:left;
+   width: 32.02%;
+   height: 100%;
+   border-right: solid white 1.1vw;
+}
+
+
+.photo1{ width: 100%; height: 70%; margin-top:14vh ; 
+   background-image: url(../images/Historia.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.photo2{ width: 100%; height: 70%; margin-top:14vh ; 
+   background-image: url(../images/obra/obra-civil2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.photo3{ width: 100%; height: 70%; margin-top:14vh ; 
+   background-image: url(../images/Goals.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#c1x h1{  color:#bcbcbc; position: absolute; top:-2vh; left: 6vw; font-size:1.5vw; }
+#c1x p{  color:#bcbcbc; position: absolute; left: 1vw; top:5vh; width:30%;}
+#c2x h1{  color:#bcbcbc;position: absolute; top:-2vh; left: 36vw; font-size:1.5vw; }
+#c2x p{  color:#bcbcbc; position: absolute; left: 29vw; top:5vh; width:30%;}
+#c3x h1{  color:#bcbcbc; position: absolute; top:-2vh; left: 62vw; font-size:1.5vw; }
+#c3x p{  color:#bcbcbc; position: absolute; left: 57vw; top:5vh; width:30%;}
+
+
+/* ----------------------- */
+/* Code for Servicios IOT HTML */
+.containerIoT{  
+  background-image: url(../images/ServiciosIot/IOT_1-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;   
+   }
+.SubContainer
+{
+    height: 100%;
+    width:100%;
+    background-color: teal;
+    opacity: 0.45;
+}
+.paralelogramo
+{
+   width: 80vw; 
+   height: 11vh; 
+   /* border: 1px solid white;  */
+   background: teal;
+   -webkit-transform: skew(55deg);
+   -moz-transform: skew(55deg);
+   -ms-transform: skew(55deg);
+   -o-transform: skew(55deg);
+   transform: skew(55deg);
+}
+
+.divisor_perception
+{
+   position:absolute;
+   top:115vh;
+   left:9vw;
+   background-image: linear-gradient(to right, teal , #8e84c7);
+}
+
+.container_perception
+{
+   background-image: url(../images/ServiciosIot/P1-min.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.divisor_conectividad
+{
+   position:absolute;
+   top:211vh;
+   left:9vw;
+   background-image: linear-gradient(to right, #00005a , #037286);
+
+}
+.container_conectividad
+{
+   background-image: url(../images/ServiciosIot/P2-min.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.divisor_procesamiento
+{
+   position:absolute;
+   top:306vh;
+   left:9vw;
+   background-image: linear-gradient(to right, #002482 ,#b2edfb);
+
+}
+
+.container_procesamiento
+{
+   background-image: url(../images/ServiciosIot/P3-min.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.divisor_aplicacion
+{
+   position:absolute;
+   top:401.5vh;
+   left:9vw;
+   background-image: linear-gradient(to right, #002482 ,#2571cf);
+}
+
+.container_aplicacion
+{
+   background-image: url(../images/ServiciosIot/P4-min.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.G_Platform{
+   color:white; 
+   border:solid 1px; 
+   padding: 1%;
+   position: absolute;
+   left: 27vw;
+   bottom:-396vh;
+   text-decoration: none;
+}
+.G_Platform:hover{ text-decoration: underline;}
+
+
+
+/* --------------------------- */

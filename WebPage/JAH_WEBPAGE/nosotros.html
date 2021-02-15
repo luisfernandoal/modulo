@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAH  Arquitectos e Ingenieros</title>
+<meta name="description" content="Empresa pionera con amplia experiencia en mantenimiento de infraestructura en edificaciones, residenciales comerciales y industriales, en lineas de fabricacion de elementos metalicos, puertas, ventanas estructuras metalicas ,cubiertas, recambio cubiertas, instalacion lineas de vida, trabajo en alturas, fabricacion de canales y bajantes accesorios, suministro e instalaciones  hidrosanitarias, hidraulica y gas, fabricacionde muebles en madera, closeth,puertas, biliotecas, cocinas integrales, fabricacion de carpinetria en aluminio ventanas, puertas, fachadas flotantes, suministro e instalacion drywall,cielo raso, muros, instalaciones electricas, instalacion pisos, remodelaciones y pintura general, mantenimnieto y adecuaciion motobombas y tanque de almacenamiento  de agua potable dentro y fuera de la ciudad." />
+<meta name="keywords" content="obras civiles, ormanentacion, canales y bajantes, cubiertas, estructuras, carpinteria en madera, carpinteria en alumni, drywall, puertas y ventanas, hidraulica y gas, eléctricos, pisos, pintura, remodelación, motobombas, policarbonato" />
+<link rel="shortcut icon" href="images/logo.JPG" type="image/x-icon">
+<link href="css/style1.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" />
+<link href="css/south-street/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- header font  -->
+<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
+</style>
+<!-- end header font -->
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.animate-enhanced.min.js"></script>
+<script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/classie.js"></script>
+<script>
+  
+
+   // obtenemos width y height del documento en cualquier navegador.
+   function getdocumentwidth(documentWidth)
+     {     
+        var w = window.innerWidth
+         || document.documentElement.clientWidth
+         || document.body.clientWidth;      
+         return w; 
+     }
+   function getdocumentheight(documentHeight){
+         var h = window.innerHeight
+         || document.documentElement.clientHeight
+         || document.body.clientHeight;
+         return h; 
+        }
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 10,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+                $("#media").addClass("goright");
+            } else {
+
+                $("#media").removeClass("goright");
+
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+
+            
+        });
+    }
+   // inicializamos funciones
+    window.onload = init();
+    window.onload = getdocumentheight();
+    window.onload = getdocumentwidth();
+</script>
+</head>
+
+<body>
+<header>
+ <div style="margin-top: -175px;margin-left: -149px;">
+  <svg style="margin-left: -30px;width: 531px;height: 160px;float: left;">
+   <defs>
+    <clipPath id="clipPath3">
+        <polygon points="348.411,160.01 133,159.818 0,0 481.709,0 "/>
+    </clipPath>
+   </defs>
+    <image xlink:href="images/logo12.jpg"  width="481" height="160" clip-path="url(#clipPath3)" transform="translate(50, 5)"></image>
+  </svg>
+<div id="frase">Proyectos hechos realidad!</div>
+<div id="subfrase">Always put your hop in GOD 
+ <span style="font-size: 10px;
+ font-family:'Gloria Hallelujah' "> HOSEA 12:6</span></div>
+    <!--DATOS DEL MENU-->
+              
+                  <ul class="mi-menu">
+                    <li class="activo"><a href="index.html"><i class="fa fa-home fa-2x"></i> INICIO </a></li>
+                    <li> <a href="#"><i class="fa fa-users fa-2x" ></i> NOSOTROS </a> </li>
+                    <li><a href="#"><i class="fa fa-industry fa-2x" ></i> SERVICIOS</a>                    
+                        <div class="submenu1">           
+                          <ul>
+                                  <li ><a href="arq_ing.html" >Arquitectura e Ingenieria</a></li>
+                                  <li><a href="mant_remodelacion.html">Mantenimiento de Cubiertas</a></li>
+                                  <li><a href="carpinteria.html">Carpinteria en Madera</a></li>
+                                  <li><a href="hidraulica.html">Obras Hidraulicas</a></li>
+                                  <li><a href="estructuras.html">Esctructuras </a></li>  
+                                  <li><a href="sys_construccion.html" >Dry Wall</a></li>
+                                  
+                            
+                          </ul>
+                          <ul>
+                                <li ><a href="serviciosIoT.html" class="ancla">Servicios IOT </a></li>
+                                <li><a href="serviciosIoT.html">Conectividad </a></li>
+                                <li><a href="serviciosIoT.html">Analitica de Datos </a></li>  
+                                <li><a href="#">Automatizacion Industrial</a></li>
+                                <li><a href="#" >Domotica</a></li> 
+                                <li><a href="#">Industrias</a></li>
+                                
+                              
+                          </ul>
+                          <ul>
+                              <li ><a href="#" >Hardware  </a></li>
+                              <li><a href="#" >Redes Inteligentes</a></li> 
+                              <li><a href="#">Sensores Inteligentes </a></li>  
+                              <li><a href="#" class="Ancla_desarrollodispositivos">Desarrollo de Dispositivos </a></li>
+                              <li><a href="#" class="Ancla_recobiometrico">Reconocimiento biometrico</a></li>
+                              <li><a href="#">Mantenimiento Predictivo</a></li>
+                              
+                            
+                          </ul>
+                          <ul>
+                            <li ><a href="#" >Software </a></li>
+                            <li><a href="#" >Plataforma de monitoreo</a></li> 
+                            <li><a href="#">Inteligencia Artificial</a></li>  
+                            <li><a href="#" class="Ancla_Diseño3D">Diseño 3D Personalizado </a></li>
+                            <li><a href="#">Big Data</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                       
+                          
+                        </ul>
+                        </div>  
+                   
+                    </li>
+                    <li><a href="casos_de_exito.html"><i class="fa fa-newspaper fa-2x"></i></i> CASOS DE EXITO</a> </li>
+                    <li><a href="#" class="anclacontacto"><i class="fa fa-phone fa-2x"></i></i> CONTACTENOS</a> </li>
+                   
+                  </ul>
+               
+    <!--FINAL DATOS DEL MENU-->
+  </div>
+</header>
+
+<div id="main">
+  <!--banner-->
+  <div id="wide_container" >
+      <div class="container1">
+        <h1>QUIÉNES SOMOS</h1>
+          <p>
+                      
+          Somos una empresa legalmente constituida y registada en la camara de Comercio de Bogotá , formamos un grupo de profesionales , con amplia experiencia en las distintas
+          areas del diseño, construccion, obra civil, hidraulica, electrica, arquitectonica, electrónica, mecanica,
+          tecnologíca.
+          <br>
+          <br>
+          Nuestro objetivo a su servicio es la seriedad, el conocimiento, la responsabilidad, la experiencia y la garantía en la ejecución de los proyectos contratados y desarrollados. 
+
+          
+          </p>
+      </div>
+      <div class="container2">
+          <h1 id="Title"> Nuestra misión en  convertirnos en una empresa
+            multidisciplinar. 
+          </h1>
+           <p id="SubTitle">Estamos convencidos  de que el compromiso y la disciplina
+             son claves fundamentales para el exito.
+           </p>
+          <div class="ro1"> 
+              <div class="col" id="c1"></div> 
+              <div class="col" id="c2"></div> 
+              <div class="col" id="c3"></div>       
+         </div>
+      </div>
+
+
+      <div class="container3">
+
+      <div class="colx" id="c1x">
+        <h1>NUESTRA HISTORIA</h1>
+        <p>Amplia experiencia en el desarrollo y gestion de proyectos.</p> 
+        <div class="photo1">   
+        </div>
+      </div> 
+
+      <div class="colx" id="c2x"> 
+        <h1>NUESTRA GENTE</h1>
+        <p>Personal altamente capacitado, con sentido de responsibilidad </p> 
+      <div class="photo2"></div></div> 
+
+      
+      <div class="colx" id="c3x"> 
+        <h1>NUESTRAS METAS</h1>
+        <p>Generar oportunidades para contribuir con el desarrollo de nuestro pais</p> 
+      <div class="photo3"></div></div>
+
+      </div>
+
+</div>
+<!--Container  redes sociales-->
+  <div class="media_container" id="media">      
+    <ul>
+        <li><a target ="_blanck" href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a target ="_blanck" href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a target ="_blanck" href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a target ="_blanck" href="https://www.linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+        <li><a  target="_blanck" href=" https://wa.me/573005552923?text=Hola!%20me%20gustaria%20obtener%20mas%20informacion."      
+                class="was">  <i class="fab fa-whatsapp"></i> </a></li>
+
+    </ul>
+  </div>
+  <div class="ws_overall">
+    <a  target="_blanck" href=" https://wa.me/573005552923?text=Hola!%20me%20gustaria%20obtener%20mas%20informacion."      
+    >  <i class="fab fa-whatsapp"></i> </a>
+  </div>
+<!-- --------------------------------------------------------- -->
+  <footer>
+
+        <div class="contact_container" style="width: 100%;height:80vh;  position: relative; margin-top:75vh; overflow: hidden;">
+
+          <div class="main_column" id="column_left">
+            <div class="covering"> 
+              <div class="form">
+                <h1>Contactanos</h1>
+                <p>Nuestro equipo de profesionales expertos en distintas areas 
+                   estan dispuestos a solucionar cualquiera de tus inquietudes.
+                </p>
+                
+                <form  action="enviar.php" method="POST width: 90%; position: relative; left:10%;">
+                  <input type="text" name="mail" placeholder="Ingresa tu email">
+                  <input type="submit"  value="Comienza hoy">
+              </form>
+            </div>
+                <div class="encuentranos">
+                <h2>Encuentranos en redes sociales</h2>
+
+                <ul>
+                  <li><a target ="_blanck" href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                  <li><a target ="_blanck" href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                  <li><a target ="_blanck" href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li><a target ="_blanck" href="https://www.linkedin.com" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a  target="_blanck" href=" https://wa.me/573005552923?text=Hola!%20me%20gustaria%20obtener%20mas%20informacion."      
+                          class="was">  <i class="fab fa-whatsapp"></i> </a></li>
+          
+              </ul>
+            </div>
+            </div>          
+          </div>
+
+          <div class="main_column"id="column_right">
+          <div class="main-column-right">
+            <div class="content-menu" >
+              <a href="#" class="linea">
+              <h2><i class="fas fa-envelope"></i> Correo electronico</h2></a> 
+               <p>Envianos un correo electronico y recibe una pronta respuesta</p>
+               <h1><i class="fas fa-envelope"></i> arquitectoseing@gmail.com</h1>   
+           </div>   
+           <div class="content-menu" >
+               <h2><i class="fas fa-phone"></i> Telefonos</h2> 
+               <p>Llamanos y conversa con un profesional dispuesto a ayudarte</p>
+               <h1><i class="fas fa-phone"></i> 3166296293</h1>
+               <h1><i class="fas fa-phone"></i> 3005552923</h1>
+               <h1><i class="fas fa-phone"></i> 3006446670</h1>
+           </div>      
+           <div class="content-menu" >
+            <h2><i class="fas fa-map-marked-alt"></i> Dirección atencion al cliente</h2> 
+            <h1><i class="fas fa-map-marker-alt"></i> Cll 81#110-34 Oficina 103 </h1>
+           </div>        
+              
+          </div>        
+          </div>
+
+          <div ><div style="width: 100%;position: absolute; bottom:0; background: rgba(17, 15, 15, 0.75); "><center>
+            <table><tbody><tr><td style="vertical-align: middle;color:#FFF !important;">© Todos los derechos reservados
+            </td></tr>
+            <tr><span style="font-size: 1vw; color:white; font-family: 'Roboto', sans-serif;">Designed by JAH Arquitectos e Ingenieros S.A.S </span></tr>
+          </tbody></table></center></div>
+         </div>
+               
+      </div>
+      
+   
+  </footer>
+</div>
+<script>
+
+
+window.onresize = function(event) {
+   // posicionamos el container de nuestras redes sociales
+  // cambiando su propiedad css top y left el posicionamiento esta definido
+  // como fixed   
+ 
+
+	  var width=$("#wide_container").width();
+		var porciento= (width*100)/1500;
+		var height=(650*porciento)/100;
+		$("#wide_container").height(height);
+    		
+		var width2=$(document).width();
+		var rest1=(width2-1040)/2;
+		$("#rest1").width(rest1);
+		$("#rest2").width(rest1);
+		
+		if ( $( "header" ).is( ".smaller" ) ) {
+ 			
+		}
+		else
+		{
+			var header=width-284;
+			$("header").width(header);	  
+     
+		}
+ 
+};
+</script> 
+<script>
+  
+	$(document).ready(function(e) { 
+
+// Anclas para redirigir dentro de la misma pagina <- Smooth scroll
+
+    $(".anclacontacto").click(function(e){
+      e.preventDefault();
+      var x=$(".contact_container").offset().top; 
+      $("html,body").animate({scrollTop: x-120 }, 2200,"swing");
+    }); 
+
+  // ____________________________________________________________
+
+		var width=$("#wide_container").width();
+    var width2=$(document).width();
+		var rest1=(width2-1040)/2;
+		$("#rest1").width(rest1);
+		$("#rest2").width(rest1);
+		
+		var porciento= (width*100)/1500;
+		var height=(650*porciento)/100;
+		$("#wide_container").height(height);
+		var header=width-284;
+		$("header").width(header);
+      	$('#slides').superslides({
+        inherit_width_from: '#wide_container',
+        inherit_height_from: '#wide_container',
+        play : 6000
+      });
+    });
+  </script>
+</body>
+</html>
