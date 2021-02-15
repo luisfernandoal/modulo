@@ -651,7 +651,7 @@ transition: 1s;
 .form{ margin:auto ; width: 95%; }
 .form > h1{ color:white;  margin-top: 2%; font-size:8vw; opacity:0.2;}
 .form > p{   color:white;  text-align: center; font-size:3.1vh; 
-             width: 90%; position: absolute; top:22vh; margin:auto; }
+             width: 90%; position: relative; margin-bottom: 50px; }
 
 .encuentranos{
    width:98%; margin:3% auto; 
